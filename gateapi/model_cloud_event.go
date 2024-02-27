@@ -9,8 +9,5 @@
 
 package swagger
 
-type GraphQlRequest struct {
-	OperationName string `json:"operationName,omitempty"`
-	Query string `json:"query,omitempty"`
-	Variables interface{} `json:"variables,omitempty"`
+type CloudEvent struct {
 }

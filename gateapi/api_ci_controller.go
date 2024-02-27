@@ -27,7 +27,7 @@ var (
 
 type CiControllerApiService service
 
-/* 
+/*
 CiControllerApiService getBuildOutputById
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param buildId buildId
@@ -87,9 +87,7 @@ func (a *CiControllerApiService) GetBuildOutputByIdUsingGET(ctx context.Context,
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -115,7 +113,7 @@ func (a *CiControllerApiService) GetBuildOutputByIdUsingGET(ctx context.Context,
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 CiControllerApiService getBuilds
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *CiControllerApiGetBuildsUsingGET1Opts - Optional Parameters:
@@ -203,9 +201,7 @@ func (a *CiControllerApiService) GetBuildsUsingGET1(ctx context.Context, localVa
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -230,3 +226,4 @@ func (a *CiControllerApiService) GetBuildsUsingGET1(ctx context.Context, localVa
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

@@ -27,7 +27,7 @@ var (
 
 type ExecutionsControllerApiService service
 
-/* 
+/*
 ExecutionsControllerApiService Retrieves an ad-hoc collection of executions based on a number of user-supplied parameters. Either executionIds or pipelineConfigIds must be supplied in order to return any results. If both are supplied, an exception will be thrown.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *ExecutionsControllerApiGetLatestExecutionsByConfigIdsUsingGETOpts - Optional Parameters:
@@ -115,9 +115,7 @@ func (a *ExecutionsControllerApiService) GetLatestExecutionsByConfigIdsUsingGET(
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -143,7 +141,7 @@ func (a *ExecutionsControllerApiService) GetLatestExecutionsByConfigIdsUsingGET(
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ExecutionsControllerApiService Search for pipeline executions using a combination of criteria. The returned list is sorted by buildTime (trigger time) in reverse order so that newer executions are first in the list.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application Only includes executions that are part of this application. If this value is \&quot;*\&quot;, results will include executions of all applications.
@@ -263,9 +261,7 @@ func (a *ExecutionsControllerApiService) SearchForPipelineExecutionsByTriggerUsi
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -290,3 +286,4 @@ func (a *ExecutionsControllerApiService) SearchForPipelineExecutionsByTriggerUsi
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

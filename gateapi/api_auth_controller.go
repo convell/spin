@@ -26,7 +26,7 @@ var (
 
 type AuthControllerApiService service
 
-/* 
+/*
 AuthControllerApiService Get service accounts
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *AuthControllerApiGetServiceAccountsUsingGETOpts - Optional Parameters:
@@ -94,9 +94,7 @@ func (a *AuthControllerApiService) GetServiceAccountsUsingGET(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -122,7 +120,7 @@ func (a *AuthControllerApiService) GetServiceAccountsUsingGET(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 AuthControllerApiService Get logged out message
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -180,9 +178,7 @@ func (a *AuthControllerApiService) LoggedOutUsingGET(ctx context.Context) (strin
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -208,7 +204,7 @@ func (a *AuthControllerApiService) LoggedOutUsingGET(ctx context.Context) (strin
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 AuthControllerApiService Redirect to Deck
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param to to
@@ -278,7 +274,7 @@ func (a *AuthControllerApiService) RedirectUsingGET(ctx context.Context, to stri
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 AuthControllerApiService Sync user roles
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -346,7 +342,7 @@ func (a *AuthControllerApiService) SyncUsingPOST(ctx context.Context) (*http.Res
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 AuthControllerApiService Get user
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -404,9 +400,7 @@ func (a *AuthControllerApiService) UserUsingGET(ctx context.Context) (User, *htt
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -431,3 +425,4 @@ func (a *AuthControllerApiService) UserUsingGET(ctx context.Context) (User, *htt
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

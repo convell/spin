@@ -21,7 +21,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]Mapstringobject**](Map«string,object».md)
+[**[]Mapstringobject**](MapÂ«string,objectÂ».md)
 
 ### Authorization
 

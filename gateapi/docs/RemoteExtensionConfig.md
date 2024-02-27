@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Config** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
+**Config** | **interface{}** |  | [optional] [default to null]
 **Id** | **string** |  | [optional] [default to null]
 **Transport** | [***RemoteExtensionTransportConfig**](RemoteExtensionTransportConfig.md) |  | [optional] [default to null]
 **Type_** | **string** |  | [optional] [default to null]

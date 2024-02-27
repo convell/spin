@@ -11,7 +11,7 @@ package swagger
 
 type Url struct {
 	Authority string `json:"authority,omitempty"`
-	Content *interface{} `json:"content,omitempty"`
+	Content interface{} `json:"content,omitempty"`
 	DefaultPort int32 `json:"defaultPort,omitempty"`
 	DeserializedFields *UrlStreamHandler `json:"deserializedFields,omitempty"`
 	File string `json:"file,omitempty"`

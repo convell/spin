@@ -27,7 +27,7 @@ var (
 
 type ClusterControllerApiService service
 
-/* 
+/*
 ClusterControllerApiService Retrieve a cluster&#39;s loadbalancers
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -103,9 +103,7 @@ func (a *ClusterControllerApiService) GetClusterLoadBalancersUsingGET(ctx contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -131,7 +129,7 @@ func (a *ClusterControllerApiService) GetClusterLoadBalancersUsingGET(ctx contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ClusterControllerApiService Retrieve a cluster&#39;s details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -205,9 +203,7 @@ func (a *ClusterControllerApiService) GetClustersUsingGET(ctx context.Context, a
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -233,7 +229,7 @@ func (a *ClusterControllerApiService) GetClustersUsingGET(ctx context.Context, a
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ClusterControllerApiService Retrieve a list of clusters for an account
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -305,9 +301,7 @@ func (a *ClusterControllerApiService) GetClustersUsingGET1(ctx context.Context, 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -333,7 +327,7 @@ func (a *ClusterControllerApiService) GetClustersUsingGET1(ctx context.Context, 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ClusterControllerApiService Retrieve a list of cluster names for an application, grouped by account
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -403,9 +397,7 @@ func (a *ClusterControllerApiService) GetClustersUsingGET2(ctx context.Context, 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -431,7 +423,7 @@ func (a *ClusterControllerApiService) GetClustersUsingGET2(ctx context.Context, 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ClusterControllerApiService Retrieve a list of scaling activities for a server group
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -517,9 +509,7 @@ func (a *ClusterControllerApiService) GetScalingActivitiesUsingGET(ctx context.C
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -545,7 +535,7 @@ func (a *ClusterControllerApiService) GetScalingActivitiesUsingGET(ctx context.C
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ClusterControllerApiService Retrieve a server group&#39;s details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -621,9 +611,7 @@ func (a *ClusterControllerApiService) GetServerGroupsUsingGET(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -649,7 +637,7 @@ func (a *ClusterControllerApiService) GetServerGroupsUsingGET(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ClusterControllerApiService Retrieve a list of server groups for a cluster
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -723,9 +711,7 @@ func (a *ClusterControllerApiService) GetServerGroupsUsingGET1(ctx context.Conte
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -751,7 +737,7 @@ func (a *ClusterControllerApiService) GetServerGroupsUsingGET1(ctx context.Conte
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ClusterControllerApiService Retrieve a server group that matches a target coordinate (e.g., newest, ancestor) relative to a cluster
 &#x60;scope&#x60; is either a zone or a region
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -842,9 +828,7 @@ func (a *ClusterControllerApiService) GetTargetServerGroupUsingGET(ctx context.C
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -869,3 +853,4 @@ func (a *ClusterControllerApiService) GetTargetServerGroupUsingGET(ctx context.C
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

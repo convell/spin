@@ -27,7 +27,7 @@ var (
 
 type SecurityGroupControllerApiService service
 
-/* 
+/*
 SecurityGroupControllerApiService Retrieve a list of security groups for a given account, grouped by region
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -102,9 +102,7 @@ func (a *SecurityGroupControllerApiService) AllByAccountUsingGET1(ctx context.Co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -130,7 +128,7 @@ func (a *SecurityGroupControllerApiService) AllByAccountUsingGET1(ctx context.Co
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 SecurityGroupControllerApiService Retrieve a list of security groups, grouped by account, cloud provider, and region
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *SecurityGroupControllerApiAllUsingGET5Opts - Optional Parameters:
@@ -203,9 +201,7 @@ func (a *SecurityGroupControllerApiService) AllUsingGET5(ctx context.Context, lo
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -231,7 +227,7 @@ func (a *SecurityGroupControllerApiService) AllUsingGET5(ctx context.Context, lo
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 SecurityGroupControllerApiService Retrieve a security group&#39;s details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -315,9 +311,7 @@ func (a *SecurityGroupControllerApiService) GetSecurityGroupUsingGET1(ctx contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -342,3 +336,4 @@ func (a *SecurityGroupControllerApiService) GetSecurityGroupUsingGET1(ctx contex
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

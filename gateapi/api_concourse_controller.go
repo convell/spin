@@ -26,7 +26,7 @@ var (
 
 type ConcourseControllerApiService service
 
-/* 
+/*
 ConcourseControllerApiService Retrieve the list of job names for a given pipeline available to triggers
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param buildMaster buildMaster
@@ -90,9 +90,7 @@ func (a *ConcourseControllerApiService) JobsUsingGET(ctx context.Context, buildM
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -118,7 +116,7 @@ func (a *ConcourseControllerApiService) JobsUsingGET(ctx context.Context, buildM
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ConcourseControllerApiService Retrieve the list of pipeline names for a given team available to triggers
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param buildMaster buildMaster
@@ -180,9 +178,7 @@ func (a *ConcourseControllerApiService) PipelinesUsingGET(ctx context.Context, b
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -208,7 +204,7 @@ func (a *ConcourseControllerApiService) PipelinesUsingGET(ctx context.Context, b
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ConcourseControllerApiService Retrieve the list of resource names for a given pipeline available to the Concourse stage
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param buildMaster buildMaster
@@ -272,9 +268,7 @@ func (a *ConcourseControllerApiService) ResourcesUsingGET(ctx context.Context, b
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -299,3 +293,4 @@ func (a *ConcourseControllerApiService) ResourcesUsingGET(ctx context.Context, b
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

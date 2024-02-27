@@ -27,7 +27,7 @@ var (
 
 type BuildControllerApiService service
 
-/* 
+/*
 BuildControllerApiService Get build masters
 Deprecated, use the v3 endpoint instead
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -96,9 +96,7 @@ func (a *BuildControllerApiService) GetBuildMastersUsingGET(ctx context.Context,
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -124,7 +122,7 @@ func (a *BuildControllerApiService) GetBuildMastersUsingGET(ctx context.Context,
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BuildControllerApiService Get build for build master
 Deprecated, use the v3 endpoint instead
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -187,9 +185,7 @@ func (a *BuildControllerApiService) GetBuildUsingGET(ctx context.Context, buildM
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -215,7 +211,7 @@ func (a *BuildControllerApiService) GetBuildUsingGET(ctx context.Context, buildM
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BuildControllerApiService Get builds for build master
 Deprecated, use the v3 endpoint instead
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -276,9 +272,7 @@ func (a *BuildControllerApiService) GetBuildsUsingGET(ctx context.Context, build
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -304,7 +298,7 @@ func (a *BuildControllerApiService) GetBuildsUsingGET(ctx context.Context, build
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BuildControllerApiService Get job config
 Deprecated, use the v3 endpoint instead
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -365,9 +359,7 @@ func (a *BuildControllerApiService) GetJobConfigUsingGET(ctx context.Context, bu
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -393,7 +385,7 @@ func (a *BuildControllerApiService) GetJobConfigUsingGET(ctx context.Context, bu
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BuildControllerApiService Get jobs for build master
 Deprecated, use the v3 endpoint instead
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -454,9 +446,7 @@ func (a *BuildControllerApiService) GetJobsForBuildMasterUsingGET(ctx context.Co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -482,7 +472,7 @@ func (a *BuildControllerApiService) GetJobsForBuildMasterUsingGET(ctx context.Co
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BuildControllerApiService Get build masters
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *BuildControllerApiV3GetBuildMastersUsingGETOpts - Optional Parameters:
@@ -550,9 +540,7 @@ func (a *BuildControllerApiService) V3GetBuildMastersUsingGET(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -578,7 +566,7 @@ func (a *BuildControllerApiService) V3GetBuildMastersUsingGET(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BuildControllerApiService Get build for build master
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param buildMaster buildMaster
@@ -642,9 +630,7 @@ func (a *BuildControllerApiService) V3GetBuildUsingGET(ctx context.Context, buil
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -670,7 +656,7 @@ func (a *BuildControllerApiService) V3GetBuildUsingGET(ctx context.Context, buil
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BuildControllerApiService Get builds for build master
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param buildMaster buildMaster
@@ -732,9 +718,7 @@ func (a *BuildControllerApiService) V3GetBuildsUsingGET(ctx context.Context, bui
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -760,7 +744,7 @@ func (a *BuildControllerApiService) V3GetBuildsUsingGET(ctx context.Context, bui
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BuildControllerApiService Get job config
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param buildMaster buildMaster
@@ -822,9 +806,7 @@ func (a *BuildControllerApiService) V3GetJobConfigUsingGET(ctx context.Context, 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -850,7 +832,7 @@ func (a *BuildControllerApiService) V3GetJobConfigUsingGET(ctx context.Context, 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BuildControllerApiService Get jobs for build master
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param buildMaster buildMaster
@@ -910,9 +892,7 @@ func (a *BuildControllerApiService) V3GetJobsForBuildMasterUsingGET(ctx context.
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -937,3 +917,4 @@ func (a *BuildControllerApiService) V3GetJobsForBuildMasterUsingGET(ctx context.
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

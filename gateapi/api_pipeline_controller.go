@@ -1,4 +1,3 @@
-
 /*
  * Spinnaker API
  *
@@ -12,11 +11,12 @@ package swagger
 
 import (
 	"context"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
-	"fmt"
+
 	"github.com/antihax/optional"
 )
 
@@ -27,7 +27,7 @@ var (
 
 type PipelineControllerApiService service
 
-/* 
+/*
 PipelineControllerApiService Cancel a pipeline execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -112,7 +112,7 @@ func (a *PipelineControllerApiService) CancelPipelineUsingPUT1(ctx context.Conte
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Delete a pipeline definition
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -184,7 +184,7 @@ func (a *PipelineControllerApiService) DeletePipelineUsingDELETE(ctx context.Con
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Delete a pipeline execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -244,9 +244,7 @@ func (a *PipelineControllerApiService) DeletePipelineUsingDELETE1(ctx context.Co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -272,7 +270,7 @@ func (a *PipelineControllerApiService) DeletePipelineUsingDELETE1(ctx context.Co
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Evaluate a pipeline expression at a specific stage using the provided execution as context
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param expression expression
@@ -336,9 +334,7 @@ func (a *PipelineControllerApiService) EvaluateExpressionForExecutionAtStageUsin
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -364,7 +360,7 @@ func (a *PipelineControllerApiService) EvaluateExpressionForExecutionAtStageUsin
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Evaluate a pipeline expression using the provided execution as context
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param expression expression
@@ -426,9 +422,7 @@ func (a *PipelineControllerApiService) EvaluateExpressionForExecutionUsingGET(ct
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -454,7 +448,7 @@ func (a *PipelineControllerApiService) EvaluateExpressionForExecutionUsingGET(ct
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Evaluate a pipeline expression using the provided execution as context
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -462,7 +456,7 @@ PipelineControllerApiService Evaluate a pipeline expression using the provided e
 
 @return map[string]interface{}
 */
-func (a *PipelineControllerApiService) EvaluateExpressionForExecutionViaPOSTUsingPOST1(ctx context.Context, id string, pipelineExpression interface{}) (map[string]interface{}, *http.Response, error) {
+func (a *PipelineControllerApiService) EvaluateExpressionForExecutionViaPOSTUsingPOST(ctx context.Context, id string, pipelineExpression interface{}) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
 		localVarPostBody   interface{}
@@ -517,9 +511,7 @@ func (a *PipelineControllerApiService) EvaluateExpressionForExecutionViaPOSTUsin
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -545,7 +537,7 @@ func (a *PipelineControllerApiService) EvaluateExpressionForExecutionViaPOSTUsin
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Evaluate variables same as Evaluate Variables stage using the provided execution as context
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param executionId Execution id to run against
@@ -623,9 +615,7 @@ func (a *PipelineControllerApiService) EvaluateVariablesUsingPOST(ctx context.Co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -651,7 +641,7 @@ func (a *PipelineControllerApiService) EvaluateVariablesUsingPOST(ctx context.Co
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Retrieve a pipeline execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -711,9 +701,7 @@ func (a *PipelineControllerApiService) GetPipelineUsingGET(ctx context.Context, 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -739,13 +727,13 @@ func (a *PipelineControllerApiService) GetPipelineUsingGET(ctx context.Context, 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Trigger a pipeline execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
  * @param pipelineNameOrId pipelineNameOrId
  * @param optional nil or *PipelineControllerApiInvokePipelineConfigUsingPOST1Opts - Optional Parameters:
-     * @param "Trigger" (optional.Interface of interface{}) -  trigger
+     * @param "Trigger" (optional.Interface{}) -  trigger
 
 
 */
@@ -791,7 +779,6 @@ func (a *PipelineControllerApiService) InvokePipelineConfigUsingPOST1(ctx contex
 	}
 	// body params
 	if localVarOptionals != nil && localVarOptionals.Trigger.IsSet() {
-		
 		localVarOptionalTrigger, localVarOptionalTriggerok := localVarOptionals.Trigger.Value().(interface{})
 		if !localVarOptionalTriggerok {
 				return nil, reportError("trigger should be interface{}")
@@ -838,13 +825,13 @@ func (a *PipelineControllerApiService) InvokePipelineConfigUsingPOST1(ctx contex
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Trigger a pipeline execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
  * @param pipelineNameOrId pipelineNameOrId
  * @param optional nil or *PipelineControllerApiInvokePipelineConfigViaEchoUsingPOSTOpts - Optional Parameters:
-     * @param "Trigger" (optional.Interface of interface{}) -  trigger
+     * @param "Trigger" (optional.Interface{}) -  trigger
 
 @return interface{}
 */
@@ -890,7 +877,6 @@ func (a *PipelineControllerApiService) InvokePipelineConfigViaEchoUsingPOST(ctx 
 	}
 	// body params
 	if localVarOptionals != nil && localVarOptionals.Trigger.IsSet() {
-		
 		localVarOptionalTrigger, localVarOptionalTriggerok := localVarOptionals.Trigger.Value().(interface{})
 		if !localVarOptionalTriggerok {
 				return localVarReturnValue, nil, reportError("trigger should be interface{}")
@@ -916,9 +902,7 @@ func (a *PipelineControllerApiService) InvokePipelineConfigViaEchoUsingPOST(ctx 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -944,7 +928,7 @@ func (a *PipelineControllerApiService) InvokePipelineConfigViaEchoUsingPOST(ctx 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Pause a pipeline execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -1014,7 +998,7 @@ func (a *PipelineControllerApiService) PausePipelineUsingPUT(ctx context.Context
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Rename a pipeline definition
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param renameCommand renameCommand
@@ -1085,7 +1069,7 @@ func (a *PipelineControllerApiService) RenamePipelineUsingPOST(ctx context.Conte
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Restart a stage execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param context context
@@ -1150,9 +1134,7 @@ func (a *PipelineControllerApiService) RestartStageUsingPUT(ctx context.Context,
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1178,7 +1160,7 @@ func (a *PipelineControllerApiService) RestartStageUsingPUT(ctx context.Context,
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Resume a pipeline execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -1238,9 +1220,7 @@ func (a *PipelineControllerApiService) ResumePipelineUsingPUT(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1266,7 +1246,7 @@ func (a *PipelineControllerApiService) ResumePipelineUsingPUT(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Save a pipeline definition
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param pipeline pipeline
@@ -1347,7 +1327,7 @@ func (a *PipelineControllerApiService) SavePipelineUsingPOST(ctx context.Context
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Initiate a pipeline execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param map_ map
@@ -1408,9 +1388,7 @@ func (a *PipelineControllerApiService) StartUsingPOST(ctx context.Context, map_ 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1436,7 +1414,7 @@ func (a *PipelineControllerApiService) StartUsingPOST(ctx context.Context, map_ 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Update a pipeline definition
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -1499,9 +1477,7 @@ func (a *PipelineControllerApiService) UpdatePipelineUsingPUT(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1527,7 +1503,7 @@ func (a *PipelineControllerApiService) UpdatePipelineUsingPUT(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 PipelineControllerApiService Update a stage execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param context context
@@ -1592,9 +1568,7 @@ func (a *PipelineControllerApiService) UpdateStageUsingPATCH(ctx context.Context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1619,3 +1593,4 @@ func (a *PipelineControllerApiService) UpdateStageUsingPATCH(ctx context.Context
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

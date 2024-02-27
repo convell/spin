@@ -27,7 +27,7 @@ var (
 
 type ImageControllerApiService service
 
-/* 
+/*
 ImageControllerApiService Retrieve a list of images, filtered by cloud provider, region, and account
 The query parameter &#x60;q&#x60; filters the list of images by image name
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -116,9 +116,7 @@ func (a *ImageControllerApiService) FindImagesUsingGET(ctx context.Context, loca
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -144,7 +142,7 @@ func (a *ImageControllerApiService) FindImagesUsingGET(ctx context.Context, loca
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ImageControllerApiService Find tags
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -221,9 +219,7 @@ func (a *ImageControllerApiService) FindTagsUsingGET(ctx context.Context, accoun
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -249,7 +245,7 @@ func (a *ImageControllerApiService) FindTagsUsingGET(ctx context.Context, accoun
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ImageControllerApiService Get image details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -328,9 +324,7 @@ func (a *ImageControllerApiService) GetImageDetailsUsingGET(ctx context.Context,
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -355,3 +349,4 @@ func (a *ImageControllerApiService) GetImageDetailsUsingGET(ctx context.Context,
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

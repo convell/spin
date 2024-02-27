@@ -17,7 +17,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -52,11 +52,11 @@ Name | Type | Description  | Notes
 
  **xEventKey** | **optional.String**| X-Event-Key | 
  **xHubSignature** | **optional.String**| X-Hub-Signature | 
- **event** | [**optional.Interface of interface{}**](interface{}.md)| event | 
+ **event** | **optional.Interface{}**| event | 
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 

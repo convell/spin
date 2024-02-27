@@ -11,7 +11,7 @@ package swagger
 
 type ConstraintState struct {
 	ArtifactVersion string `json:"artifactVersion,omitempty"`
-	Attributes *interface{} `json:"attributes,omitempty"`
+	Attributes interface{} `json:"attributes,omitempty"`
 	Comment string `json:"comment,omitempty"`
 	CreatedAt string `json:"createdAt,omitempty"`
 	DeliveryConfigName string `json:"deliveryConfigName,omitempty"`

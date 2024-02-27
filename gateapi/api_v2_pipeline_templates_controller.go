@@ -27,7 +27,7 @@ var (
 
 type V2PipelineTemplatesControllerApiService service
 
-/* 
+/*
 V2PipelineTemplatesControllerApiService (ALPHA) Create a pipeline template.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param pipelineTemplate pipelineTemplate
@@ -98,9 +98,7 @@ func (a *V2PipelineTemplatesControllerApiService) CreateUsingPOST1(ctx context.C
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -126,7 +124,7 @@ func (a *V2PipelineTemplatesControllerApiService) CreateUsingPOST1(ctx context.C
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2PipelineTemplatesControllerApiService Delete a pipeline template.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -206,9 +204,7 @@ func (a *V2PipelineTemplatesControllerApiService) DeleteUsingDELETE1(ctx context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -234,7 +230,7 @@ func (a *V2PipelineTemplatesControllerApiService) DeleteUsingDELETE1(ctx context
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2PipelineTemplatesControllerApiService (ALPHA) Get a pipeline template.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -309,9 +305,7 @@ func (a *V2PipelineTemplatesControllerApiService) GetUsingGET2(ctx context.Conte
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -337,7 +331,7 @@ func (a *V2PipelineTemplatesControllerApiService) GetUsingGET2(ctx context.Conte
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2PipelineTemplatesControllerApiService (ALPHA) List all pipelines that implement a pipeline template
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -397,9 +391,7 @@ func (a *V2PipelineTemplatesControllerApiService) ListPipelineTemplateDependents
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -425,7 +417,7 @@ func (a *V2PipelineTemplatesControllerApiService) ListPipelineTemplateDependents
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2PipelineTemplatesControllerApiService (ALPHA) List pipeline templates.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *V2PipelineTemplatesControllerApiListUsingGET1Opts - Optional Parameters:
@@ -493,9 +485,7 @@ func (a *V2PipelineTemplatesControllerApiService) ListUsingGET1(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -521,7 +511,7 @@ func (a *V2PipelineTemplatesControllerApiService) ListUsingGET1(ctx context.Cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2PipelineTemplatesControllerApiService List pipeline templates with versions
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *V2PipelineTemplatesControllerApiListVersionsUsingGETOpts - Optional Parameters:
@@ -589,9 +579,7 @@ func (a *V2PipelineTemplatesControllerApiService) ListVersionsUsingGET(ctx conte
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -617,7 +605,7 @@ func (a *V2PipelineTemplatesControllerApiService) ListVersionsUsingGET(ctx conte
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2PipelineTemplatesControllerApiService (ALPHA) Plan a pipeline template configuration.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param pipeline pipeline
@@ -678,9 +666,7 @@ func (a *V2PipelineTemplatesControllerApiService) PlanUsingPOST(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -706,7 +692,7 @@ func (a *V2PipelineTemplatesControllerApiService) PlanUsingPOST(ctx context.Cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2PipelineTemplatesControllerApiService (ALPHA) Update a pipeline template.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -784,9 +770,7 @@ func (a *V2PipelineTemplatesControllerApiService) UpdateUsingPOST1(ctx context.C
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -811,3 +795,4 @@ func (a *V2PipelineTemplatesControllerApiService) UpdateUsingPOST1(ctx context.C
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

@@ -27,7 +27,7 @@ var (
 
 type V2CanaryControllerApiService service
 
-/* 
+/*
 V2CanaryControllerApiService (DEPRECATED) Retrieve a canary result
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param canaryConfigId canaryConfigId
@@ -99,9 +99,7 @@ func (a *V2CanaryControllerApiService) GetCanaryResultUsingGET(ctx context.Conte
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -127,7 +125,7 @@ func (a *V2CanaryControllerApiService) GetCanaryResultUsingGET(ctx context.Conte
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryControllerApiService Retrieve a canary result
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param canaryExecutionId canaryExecutionId
@@ -197,9 +195,7 @@ func (a *V2CanaryControllerApiService) GetCanaryResultUsingGET1(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -225,7 +221,7 @@ func (a *V2CanaryControllerApiService) GetCanaryResultUsingGET1(ctx context.Cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryControllerApiService Retrieve a list of an application&#39;s canary results
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -307,9 +303,7 @@ func (a *V2CanaryControllerApiService) GetCanaryResultsByApplicationUsingGET(ctx
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -335,7 +329,7 @@ func (a *V2CanaryControllerApiService) GetCanaryResultsByApplicationUsingGET(ctx
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryControllerApiService Retrieve a metric set pair list
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param metricSetPairListId metricSetPairListId
@@ -405,9 +399,7 @@ func (a *V2CanaryControllerApiService) GetMetricSetPairListUsingGET(ctx context.
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -433,7 +425,7 @@ func (a *V2CanaryControllerApiService) GetMetricSetPairListUsingGET(ctx context.
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryControllerApiService Start a canary execution
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param canaryConfigId canaryConfigId
@@ -526,9 +518,7 @@ func (a *V2CanaryControllerApiService) InitiateCanaryUsingPOST(ctx context.Conte
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -554,7 +544,7 @@ func (a *V2CanaryControllerApiService) InitiateCanaryUsingPOST(ctx context.Conte
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryControllerApiService Start a canary execution with the supplied canary config
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param adhocExecutionRequest adhocExecutionRequest
@@ -640,9 +630,7 @@ func (a *V2CanaryControllerApiService) InitiateCanaryWithConfigUsingPOST(ctx con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -668,7 +656,7 @@ func (a *V2CanaryControllerApiService) InitiateCanaryWithConfigUsingPOST(ctx con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryControllerApiService Retrieve a list of configured Kayenta accounts
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -726,9 +714,7 @@ func (a *V2CanaryControllerApiService) ListCredentialsUsingGET(ctx context.Conte
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -754,7 +740,7 @@ func (a *V2CanaryControllerApiService) ListCredentialsUsingGET(ctx context.Conte
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryControllerApiService Retrieve a list of all configured canary judges
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -812,9 +798,7 @@ func (a *V2CanaryControllerApiService) ListJudgesUsingGET(ctx context.Context) (
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -840,7 +824,7 @@ func (a *V2CanaryControllerApiService) ListJudgesUsingGET(ctx context.Context) (
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryControllerApiService Retrieve a list of descriptors for use in populating the canary config ui
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *V2CanaryControllerApiListMetricsServiceMetadataUsingGETOpts - Optional Parameters:
@@ -913,9 +897,7 @@ func (a *V2CanaryControllerApiService) ListMetricsServiceMetadataUsingGET(ctx co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -940,3 +922,4 @@ func (a *V2CanaryControllerApiService) ListMetricsServiceMetadataUsingGET(ctx co
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

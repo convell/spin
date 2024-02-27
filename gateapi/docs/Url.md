@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Authority** | **string** |  | [optional] [default to null]
-**Content** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
+**Content** | **interface{}** |  | [optional] [default to null]
 **DefaultPort** | **int32** |  | [optional] [default to null]
 **DeserializedFields** | [***UrlStreamHandler**](URLStreamHandler.md) |  | [optional] [default to null]
 **File** | **string** |  | [optional] [default to null]

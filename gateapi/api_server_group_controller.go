@@ -27,7 +27,7 @@ var (
 
 type ServerGroupControllerApiService service
 
-/* 
+/*
 ServerGroupControllerApiService Retrieve a server group&#39;s details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -108,9 +108,7 @@ func (a *ServerGroupControllerApiService) GetServerGroupDetailsUsingGET(ctx cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -136,7 +134,7 @@ func (a *ServerGroupControllerApiService) GetServerGroupDetailsUsingGET(ctx cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ServerGroupControllerApiService Retrieve a list of server groups for a given application
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param applicationName applicationName
@@ -221,9 +219,7 @@ func (a *ServerGroupControllerApiService) GetServerGroupsForApplicationUsingGET(
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -248,3 +244,4 @@ func (a *ServerGroupControllerApiService) GetServerGroupsForApplicationUsingGET(
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

@@ -26,7 +26,7 @@ var (
 
 type BakeControllerApiService service
 
-/* 
+/*
 BakeControllerApiService Retrieve a list of available bakery base images for a given cloud provider
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param cloudProvider cloudProvider
@@ -86,9 +86,7 @@ func (a *BakeControllerApiService) BakeOptionsUsingGET(ctx context.Context, clou
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -114,7 +112,7 @@ func (a *BakeControllerApiService) BakeOptionsUsingGET(ctx context.Context, clou
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BakeControllerApiService Retrieve a list of available bakery base images, grouped by cloud provider
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -172,9 +170,7 @@ func (a *BakeControllerApiService) BakeOptionsUsingGET1(ctx context.Context) (in
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -200,7 +196,7 @@ func (a *BakeControllerApiService) BakeOptionsUsingGET1(ctx context.Context) (in
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 BakeControllerApiService Retrieve the logs for a given bake
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param region region
@@ -262,9 +258,7 @@ func (a *BakeControllerApiService) LookupLogsUsingGET(ctx context.Context, regio
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -289,3 +283,4 @@ func (a *BakeControllerApiService) LookupLogsUsingGET(ctx context.Context, regio
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

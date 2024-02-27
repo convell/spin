@@ -27,7 +27,7 @@ var (
 
 type V2CanaryConfigControllerApiService service
 
-/* 
+/*
 V2CanaryConfigControllerApiService Create a canary configuration
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param config config
@@ -98,9 +98,7 @@ func (a *V2CanaryConfigControllerApiService) CreateCanaryConfigUsingPOST(ctx con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -126,7 +124,7 @@ func (a *V2CanaryConfigControllerApiService) CreateCanaryConfigUsingPOST(ctx con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryConfigControllerApiService Delete a canary configuration
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -206,7 +204,7 @@ func (a *V2CanaryConfigControllerApiService) DeleteCanaryConfigUsingDELETE(ctx c
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryConfigControllerApiService Retrieve a canary configuration by id
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -276,9 +274,7 @@ func (a *V2CanaryConfigControllerApiService) GetCanaryConfigUsingGET(ctx context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -304,7 +300,7 @@ func (a *V2CanaryConfigControllerApiService) GetCanaryConfigUsingGET(ctx context
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryConfigControllerApiService Retrieve a list of canary configurations
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *V2CanaryConfigControllerApiGetCanaryConfigsUsingGETOpts - Optional Parameters:
@@ -377,9 +373,7 @@ func (a *V2CanaryConfigControllerApiService) GetCanaryConfigsUsingGET(ctx contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -405,7 +399,7 @@ func (a *V2CanaryConfigControllerApiService) GetCanaryConfigsUsingGET(ctx contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 V2CanaryConfigControllerApiService Update a canary configuration
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param config config
@@ -478,9 +472,7 @@ func (a *V2CanaryConfigControllerApiService) UpdateCanaryConfigUsingPUT(ctx cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -505,3 +497,4 @@ func (a *V2CanaryConfigControllerApiService) UpdateCanaryConfigUsingPUT(ctx cont
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

@@ -39,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **canaryConfigId** | **string**| canaryConfigId | 
-  **executionRequest** | [**interface{}**](interface{}.md)| executionRequest | 
+  **executionRequest** | **interface{}**| executionRequest | 
  **optional** | ***V2CanaryControllerApiInitiateCanaryUsingPOSTOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 
@@ -211,7 +211,7 @@ Start a canary execution with the supplied canary config
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **adhocExecutionRequest** | [**interface{}**](interface{}.md)| adhocExecutionRequest | 
+  **adhocExecutionRequest** | **interface{}**| adhocExecutionRequest | 
  **optional** | ***V2CanaryControllerApiInitiateCanaryWithConfigUsingPOSTOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 
@@ -249,7 +249,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -271,7 +271,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 

@@ -27,7 +27,7 @@ var (
 
 type SnapshotControllerApiService service
 
-/* 
+/*
 SnapshotControllerApiService Get current snapshot
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -89,9 +89,7 @@ func (a *SnapshotControllerApiService) GetCurrentSnapshotUsingGET(ctx context.Co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -117,7 +115,7 @@ func (a *SnapshotControllerApiService) GetCurrentSnapshotUsingGET(ctx context.Co
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 SnapshotControllerApiService Get snapshot history
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -189,9 +187,7 @@ func (a *SnapshotControllerApiService) GetSnapshotHistoryUsingGET(ctx context.Co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -216,3 +212,4 @@ func (a *SnapshotControllerApiService) GetSnapshotHistoryUsingGET(ctx context.Co
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

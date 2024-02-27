@@ -10,7 +10,7 @@
 package swagger
 
 type RemoteExtensionConfig struct {
-	Config *interface{} `json:"config,omitempty"`
+	Config interface{} `json:"config,omitempty"`
 	Id string `json:"id,omitempty"`
 	Transport *RemoteExtensionTransportConfig `json:"transport,omitempty"`
 	Type_ string `json:"type,omitempty"`

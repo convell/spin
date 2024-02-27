@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Body** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
+**Body** | **interface{}** |  | [optional] [default to null]
 **StatusCode** | **string** |  | [optional] [default to null]
 **StatusCodeValue** | **int32** |  | [optional] [default to null]
 

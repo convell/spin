@@ -27,7 +27,7 @@ var (
 
 type CredentialsControllerApiService service
 
-/* 
+/*
 CredentialsControllerApiService Creates a new account definition.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *CredentialsControllerApiCreateAccountUsingPOSTOpts - Optional Parameters:
@@ -101,9 +101,7 @@ func (a *CredentialsControllerApiService) CreateAccountUsingPOST(ctx context.Con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -129,7 +127,7 @@ func (a *CredentialsControllerApiService) CreateAccountUsingPOST(ctx context.Con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 CredentialsControllerApiService Deletes an account definition by name.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountName Name of account definition to delete.
@@ -199,7 +197,7 @@ func (a *CredentialsControllerApiService) DeleteAccountUsingDELETE(ctx context.C
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 CredentialsControllerApiService Retrieve an account&#39;s details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -329,9 +327,7 @@ func (a *CredentialsControllerApiService) GetAccountUsingGET(ctx context.Context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -357,7 +353,7 @@ func (a *CredentialsControllerApiService) GetAccountUsingGET(ctx context.Context
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 CredentialsControllerApiService Looks up account definitions by type.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountType Value of the \&quot;@type\&quot; key for accounts to search for.
@@ -432,9 +428,7 @@ func (a *CredentialsControllerApiService) GetAccountsByTypeUsingGET(ctx context.
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -460,7 +454,7 @@ func (a *CredentialsControllerApiService) GetAccountsByTypeUsingGET(ctx context.
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 CredentialsControllerApiService Retrieve a list of accounts
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *CredentialsControllerApiGetAccountsUsingGETOpts - Optional Parameters:
@@ -588,9 +582,7 @@ func (a *CredentialsControllerApiService) GetAccountsUsingGET(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -616,7 +608,7 @@ func (a *CredentialsControllerApiService) GetAccountsUsingGET(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 CredentialsControllerApiService Updates an existing account definition.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *CredentialsControllerApiUpdateAccountUsingPUTOpts - Optional Parameters:
@@ -690,9 +682,7 @@ func (a *CredentialsControllerApiService) UpdateAccountUsingPUT(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -717,3 +707,4 @@ func (a *CredentialsControllerApiService) UpdateAccountUsingPUT(ctx context.Cont
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

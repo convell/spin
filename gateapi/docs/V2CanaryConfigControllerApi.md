@@ -20,7 +20,7 @@ Create a canary configuration
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **config** | [**interface{}**](interface{}.md)| config | 
+  **config** | **interface{}**| config | 
  **optional** | ***V2CanaryConfigControllerApiCreateCanaryConfigUsingPOSTOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -33,7 +33,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 
@@ -103,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -159,7 +159,7 @@ Update a canary configuration
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **config** | [**interface{}**](interface{}.md)| config | 
+  **config** | **interface{}**| config | 
   **id** | **string**| id | 
  **optional** | ***V2CanaryConfigControllerApiUpdateCanaryConfigUsingPUTOpts** | optional parameters | nil if no parameters
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 

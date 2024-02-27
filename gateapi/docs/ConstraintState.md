@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ArtifactVersion** | **string** |  | [optional] [default to null]
-**Attributes** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
+**Attributes** | **interface{}** |  | [optional] [default to null]
 **Comment** | **string** |  | [optional] [default to null]
 **CreatedAt** | **string** |  | [optional] [default to null]
 **DeliveryConfigName** | **string** |  | [optional] [default to null]

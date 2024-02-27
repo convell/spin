@@ -109,6 +109,7 @@ paths:
         schema:
           $ref: "#/definitions/ReorderPipelinesCommand"
         x-exportParamName: "ReorderPipelinesCommand"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -122,7 +123,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications:
     get:
       tags:
@@ -150,6 +150,7 @@ paths:
         allowEmptyValue: false
         x-exportParamName: "Owner"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -164,7 +165,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{applicationName}/jobs/{account}/{region}/{name}:
     get:
       tags:
@@ -213,6 +213,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Region"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -227,7 +228,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{applicationName}/serverGroups:
     get:
       tags:
@@ -272,6 +272,7 @@ paths:
         default: "false"
         x-exportParamName: "Expand"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -286,7 +287,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{applicationName}/serverGroups/{account}/{region}/{serverGroupName}:
     get:
       tags:
@@ -335,6 +335,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ServerGroupName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -346,7 +347,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}:
     get:
       tags:
@@ -370,6 +370,7 @@ paths:
         default: true
         x-exportParamName: "Expand"
         x-optionalDataType: "Bool"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -384,7 +385,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/clusters:
     get:
       tags:
@@ -407,6 +407,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -421,7 +422,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/clusters/{account}:
     get:
       tags:
@@ -450,6 +450,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -464,7 +465,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/clusters/{account}/{clusterName}:
     get:
       tags:
@@ -499,6 +499,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ClusterName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -513,7 +514,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/clusters/{account}/{clusterName}/serverGroups:
     get:
       tags:
@@ -548,6 +548,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ClusterName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -562,7 +563,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/clusters/{account}/{clusterName}/serverGroups/{serverGroupName}:
     get:
       tags:
@@ -603,6 +603,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ServerGroupName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -617,7 +618,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/clusters/{account}/{clusterName}/serverGroups/{serverGroupName}/scalingActivities:
     get:
       tags:
@@ -673,6 +673,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ServerGroupName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -687,7 +688,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/clusters/{account}/{clusterName}/{cloudProvider}/{scope}/serverGroups/target/{target}:
     get:
       tags:
@@ -756,6 +756,7 @@ paths:
         type: "boolean"
         x-exportParamName: "ValidateOldest"
         x-optionalDataType: "Bool"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -770,7 +771,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/clusters/{account}/{clusterName}/{type}/loadBalancers:
     get:
       tags:
@@ -811,6 +811,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Type_"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -825,7 +826,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/executions/search:
     get:
       tags:
@@ -977,6 +977,7 @@ paths:
         allowEmptyValue: false
         x-exportParamName: "TriggerTypes"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -991,7 +992,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/functions:
     get:
       tags:
@@ -1007,6 +1007,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1021,7 +1022,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/history:
     get:
       tags:
@@ -1046,6 +1046,7 @@ paths:
         format: "int32"
         x-exportParamName: "Limit"
         x-optionalDataType: "Int32"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1060,7 +1061,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/loadBalancers:
     get:
       tags:
@@ -1083,6 +1083,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1097,7 +1098,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/pipelineConfigs:
     get:
       tags:
@@ -1113,6 +1113,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1127,7 +1128,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/pipelineConfigs/{pipelineName}:
     get:
       tags:
@@ -1149,6 +1149,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "PipelineName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1163,7 +1164,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     post:
       tags:
       - "application-controller"
@@ -1193,6 +1193,7 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "Trigger"
+        x-optionalDataType: "Interface{}"
       - name: "user"
         in: "query"
         description: "user"
@@ -1200,6 +1201,7 @@ paths:
         type: "string"
         x-exportParamName: "User"
         x-optionalDataType: "String"
+      deprecated: true
       responses:
         "200":
           description: "OK"
@@ -1213,7 +1215,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: true
   /applications/{application}/pipelines:
     get:
       tags:
@@ -1251,6 +1252,7 @@ paths:
         type: "string"
         x-exportParamName: "Statuses"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1265,7 +1267,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/pipelines/{id}/cancel:
     put:
       tags:
@@ -1290,6 +1291,7 @@ paths:
         type: "string"
         x-exportParamName: "Reason"
         x-optionalDataType: "String"
+      deprecated: true
       responses:
         "200":
           description: "OK"
@@ -1306,7 +1308,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: true
   /applications/{application}/rawResources:
     get:
       tags:
@@ -1322,6 +1323,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1336,7 +1338,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/serverGroupManagers:
     get:
       tags:
@@ -1352,6 +1353,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1366,7 +1368,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/serverGroups/{account}/{serverGroupName}/events:
     get:
       tags:
@@ -1406,6 +1407,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ServerGroupName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1420,7 +1422,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/snapshots/{account}:
     get:
       tags:
@@ -1442,6 +1443,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1456,7 +1458,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/snapshots/{account}/history:
     get:
       tags:
@@ -1487,6 +1488,7 @@ paths:
         format: "int32"
         x-exportParamName: "Limit"
         x-optionalDataType: "Int32"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1501,7 +1503,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/strategyConfigs:
     get:
       tags:
@@ -1517,6 +1518,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1531,7 +1533,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/strategyConfigs/{strategyName}:
     get:
       tags:
@@ -1553,6 +1554,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "StrategyName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1567,7 +1569,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /applications/{application}/tasks:
     get:
       tags:
@@ -1606,6 +1607,7 @@ paths:
         type: "string"
         x-exportParamName: "Statuses"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1620,7 +1622,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     post:
       tags:
       - "application-controller"
@@ -1644,6 +1645,7 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "Map_"
+      deprecated: true
       responses:
         "200":
           description: "OK"
@@ -1660,7 +1662,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: true
   /applications/{application}/tasks/{id}:
     get:
       tags:
@@ -1676,6 +1677,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: true
       responses:
         "200":
           description: "OK"
@@ -1690,7 +1692,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: true
   /applications/{application}/tasks/{id}/cancel:
     put:
       tags:
@@ -1708,6 +1709,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: true
       responses:
         "200":
           description: "OK"
@@ -1724,7 +1726,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: true
   /applications/{application}/tasks/{id}/details/{taskDetailsId}:
     get:
       tags:
@@ -1753,6 +1754,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "TaskDetailsId"
+      deprecated: true
       responses:
         "200":
           description: "OK"
@@ -1767,7 +1769,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: true
   /artifacts/account/{accountName}/versions:
     get:
       tags:
@@ -1802,6 +1803,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Type_"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1815,7 +1817,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /artifacts/credentials:
     get:
       tags:
@@ -1832,6 +1833,7 @@ paths:
         type: "string"
         x-exportParamName: "XRateLimitApp"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1846,7 +1848,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /artifacts/{provider}/{packageName}/{version}:
     get:
       tags:
@@ -1875,6 +1876,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Version"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1886,7 +1888,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /auth/loggedOut:
     get:
       tags:
@@ -1896,6 +1897,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1907,7 +1909,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /auth/redirect:
     get:
       tags:
@@ -1923,6 +1924,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "To"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1932,7 +1934,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /auth/roles/sync:
     post:
       tags:
@@ -1944,6 +1945,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1955,7 +1957,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /auth/user:
     get:
       tags:
@@ -1965,6 +1966,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -1976,7 +1978,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /auth/user/serviceAccounts:
     get:
       tags:
@@ -1993,6 +1994,7 @@ paths:
         type: "string"
         x-exportParamName: "Application"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2007,7 +2009,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /bakery/logs/{region}/{statusId}:
     get:
       tags:
@@ -2029,6 +2030,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "StatusId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2040,7 +2042,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /bakery/options:
     get:
       tags:
@@ -2051,6 +2052,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2062,7 +2064,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /bakery/options/{cloudProvider}:
     get:
       tags:
@@ -2079,6 +2080,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "CloudProvider"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2090,7 +2092,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /ci/builds:
     get:
       tags:
@@ -2135,20 +2136,20 @@ paths:
         type: "string"
         x-exportParamName: "RepoSlug"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
           schema:
             type: "array"
             items:
-              $ref: "#/definitions/Map«string,object»"
+              $ref: "#/definitions/MapÂ«string,objectÂ»"
         "401":
           description: "Unauthorized"
         "403":
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /ci/builds/{buildId}/output:
     get:
       tags:
@@ -2164,6 +2165,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "BuildId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2175,7 +2177,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /concourse/{buildMaster}/teams/{team}/pipelines:
     get:
       tags:
@@ -2198,6 +2199,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Team"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2212,7 +2214,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /concourse/{buildMaster}/teams/{team}/pipelines/{pipeline}/jobs:
     get:
       tags:
@@ -2240,6 +2241,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Team"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2254,7 +2256,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /concourse/{buildMaster}/teams/{team}/pipelines/{pipeline}/resources:
     get:
       tags:
@@ -2283,6 +2284,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Team"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2297,7 +2299,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /credentials:
     get:
       tags:
@@ -2390,6 +2391,7 @@ paths:
         type: "string"
         x-exportParamName: "Username"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2403,7 +2405,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     post:
       tags:
       - "credentials-controller"
@@ -2422,6 +2423,7 @@ paths:
         schema:
           $ref: "#/definitions/AccountDefinition"
         x-exportParamName: "AccountDefinition"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2435,7 +2437,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     put:
       tags:
       - "credentials-controller"
@@ -2454,6 +2455,7 @@ paths:
         schema:
           $ref: "#/definitions/AccountDefinition"
         x-exportParamName: "AccountDefinition"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2467,7 +2469,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /credentials/type/{accountType}:
     get:
       tags:
@@ -2501,6 +2502,7 @@ paths:
         allowEmptyValue: false
         x-exportParamName: "StartingAccountName"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2514,7 +2516,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /credentials/{accountName}:
     delete:
       tags:
@@ -2530,6 +2531,7 @@ paths:
         required: false
         type: "string"
         x-exportParamName: "AccountName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2539,7 +2541,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /credentials/{account}:
     get:
       tags:
@@ -2638,6 +2639,7 @@ paths:
         type: "string"
         x-exportParamName: "Username"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2649,7 +2651,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /executions:
     get:
       tags:
@@ -2712,6 +2713,7 @@ paths:
         allowEmptyValue: false
         x-exportParamName: "Statuses"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2726,7 +2728,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /firewalls:
     get:
       tags:
@@ -2751,6 +2752,7 @@ paths:
         type: "string"
         x-exportParamName: "Id"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2762,7 +2764,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /firewalls/{account}:
     get:
       tags:
@@ -2793,6 +2794,7 @@ paths:
         default: "aws"
         x-exportParamName: "Provider"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2804,7 +2806,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /firewalls/{account}/{region}:
     get:
       tags:
@@ -2841,6 +2842,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Region"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2855,7 +2857,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /firewalls/{account}/{region}/{name}:
     get:
       tags:
@@ -2905,6 +2906,7 @@ paths:
         type: "string"
         x-exportParamName: "VpcId"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2916,7 +2918,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /functions:
     get:
       tags:
@@ -2947,6 +2948,7 @@ paths:
         type: "string"
         x-exportParamName: "Region"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -2961,7 +2963,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /images/find:
     get:
       tags:
@@ -3010,6 +3011,7 @@ paths:
         type: "string"
         x-exportParamName: "Region"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3024,7 +3026,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /images/tags:
     get:
       tags:
@@ -3061,6 +3062,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Repository"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3075,7 +3077,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /images/{account}/{region}/{imageId}:
     get:
       tags:
@@ -3118,6 +3119,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Region"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3132,7 +3134,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /instanceTypes:
     get:
       tags:
@@ -3142,6 +3143,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3156,7 +3158,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /instances/{account}/{region}/{instanceId}:
     get:
       tags:
@@ -3191,6 +3192,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Region"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3202,7 +3204,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /instances/{account}/{region}/{instanceId}/console:
     get:
       tags:
@@ -3245,6 +3246,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Region"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3256,7 +3258,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /loadBalancers:
     get:
       tags:
@@ -3281,6 +3282,7 @@ paths:
         default: "aws"
         x-exportParamName: "Provider"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3295,7 +3297,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /loadBalancers/{account}/{region}/{name}:
     get:
       tags:
@@ -3339,6 +3340,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Region"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3353,7 +3355,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /loadBalancers/{name}:
     get:
       tags:
@@ -3384,6 +3385,7 @@ paths:
         default: "aws"
         x-exportParamName: "Provider"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3398,7 +3400,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/application/{application}:
     get:
       tags:
@@ -3439,6 +3440,7 @@ paths:
         format: "int32"
         x-exportParamName: "MaxArtifactVersions"
         x-optionalDataType: "Int32"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3450,7 +3452,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/application/{application}/config:
     get:
       tags:
@@ -3466,6 +3467,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3477,7 +3479,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     delete:
       tags:
       - "managed-controller"
@@ -3492,6 +3493,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3503,7 +3505,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /managed/application/{application}/environment/{environment}/constraint:
     post:
       tags:
@@ -3534,6 +3535,7 @@ paths:
         schema:
           $ref: "#/definitions/ConstraintStatus"
         x-exportParamName: "Status"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3545,7 +3547,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/application/{application}/environment/{environment}/constraints:
     get:
       tags:
@@ -3575,6 +3576,7 @@ paths:
         default: "10"
         x-exportParamName: "Limit"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3586,7 +3588,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/application/{application}/mark/bad:
     post:
       tags:
@@ -3611,6 +3612,7 @@ paths:
         schema:
           $ref: "#/definitions/EnvironmentArtifactVeto"
         x-exportParamName: "Veto"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3622,7 +3624,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/application/{application}/mark/good:
     post:
       tags:
@@ -3647,6 +3648,7 @@ paths:
         schema:
           $ref: "#/definitions/EnvironmentArtifactVeto"
         x-exportParamName: "Veto"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3658,7 +3660,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/application/{application}/pause:
     post:
       tags:
@@ -3676,6 +3677,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3687,7 +3689,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     delete:
       tags:
       - "managed-controller"
@@ -3702,6 +3703,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3711,7 +3713,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /managed/application/{application}/pin:
     post:
       tags:
@@ -3736,6 +3737,7 @@ paths:
         schema:
           $ref: "#/definitions/EnvironmentArtifactPin"
         x-exportParamName: "Pin"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3747,7 +3749,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/application/{application}/pin/{targetEnvironment}:
     delete:
       tags:
@@ -3778,6 +3779,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "TargetEnvironment"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3787,7 +3789,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /managed/application/{application}/veto:
     post:
       tags:
@@ -3812,6 +3813,7 @@ paths:
         schema:
           $ref: "#/definitions/EnvironmentArtifactVeto"
         x-exportParamName: "Veto"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3823,7 +3825,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/application/{application}/veto/{targetEnvironment}/{reference}/{version}:
     delete:
       tags:
@@ -3857,6 +3858,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Version"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3866,7 +3868,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /managed/delivery-configs:
     post:
       tags:
@@ -3886,6 +3887,7 @@ paths:
         schema:
           $ref: "#/definitions/DeliveryConfig"
         x-exportParamName: "Manifest"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3899,7 +3901,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/delivery-configs/diff:
     post:
       tags:
@@ -3919,6 +3920,7 @@ paths:
         schema:
           $ref: "#/definitions/DeliveryConfig"
         x-exportParamName: "Manifest"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3932,7 +3934,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/delivery-configs/schema:
     get:
       tags:
@@ -3943,6 +3944,7 @@ paths:
       - "application/json"
       - "application/x-yaml"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3954,7 +3956,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/delivery-configs/validate:
     post:
       tags:
@@ -3975,6 +3976,7 @@ paths:
         schema:
           $ref: "#/definitions/DeliveryConfig"
         x-exportParamName: "Manifest"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -3988,7 +3990,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/delivery-configs/{name}:
     get:
       tags:
@@ -4004,6 +4005,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Name"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -4015,7 +4017,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     delete:
       tags:
       - "managed-controller"
@@ -4030,6 +4031,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Name"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -4041,7 +4043,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /managed/delivery-configs/{name}.yml:
     get:
       tags:
@@ -4057,6 +4058,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Name"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -4068,7 +4070,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/delivery-configs/{name}/artifacts:
     get:
       tags:
@@ -4084,6 +4085,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Name"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -4098,7 +4100,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/environments/{application}:
     get:
       tags:
@@ -4114,20 +4115,20 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Application"
+      deprecated: false
       responses:
         "200":
           description: "OK"
           schema:
             type: "array"
             items:
-              $ref: "#/definitions/Map«string,object»"
+              $ref: "#/definitions/MapÂ«string,objectÂ»"
         "401":
           description: "Unauthorized"
         "403":
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/graphql:
     post:
       tags:
@@ -4146,6 +4147,7 @@ paths:
         schema:
           $ref: "#/definitions/GraphQLRequest"
         x-exportParamName: "Query"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -4159,7 +4161,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/notifications/callbacks/{source}:
     post:
       tags:
@@ -5133,6 +5134,7 @@ paths:
         type: "string"
         x-exportParamName: "UrlUserInfo"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5146,7 +5148,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/reports/adoption:
     get:
       tags:
@@ -5165,6 +5166,7 @@ paths:
           additionalProperties:
             type: "string"
         x-exportParamName: "Params"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5177,7 +5179,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/reports/onboarding:
     get:
       tags:
@@ -5203,6 +5204,7 @@ paths:
           additionalProperties:
             type: "string"
         x-exportParamName: "Params"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5215,7 +5217,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/resources/diff:
     post:
       tags:
@@ -5235,6 +5236,7 @@ paths:
         schema:
           $ref: "#/definitions/Resource"
         x-exportParamName: "Resource"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5248,7 +5250,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/resources/export/artifact/{cloudProvider}/{account}/{clusterName}:
     get:
       tags:
@@ -5277,6 +5278,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ClusterName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5288,7 +5290,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/resources/export/{cloudProvider}/{account}/{type}/{name}:
     get:
       tags:
@@ -5328,6 +5329,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Type_"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5339,7 +5341,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/resources/{resourceId}:
     get:
       tags:
@@ -5355,6 +5356,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ResourceId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5366,7 +5368,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/resources/{resourceId}.yml:
     get:
       tags:
@@ -5382,6 +5383,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ResourceId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5393,7 +5395,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/resources/{resourceId}/pause:
     post:
       tags:
@@ -5411,6 +5412,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ResourceId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5422,7 +5424,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     delete:
       tags:
       - "managed-controller"
@@ -5437,6 +5438,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ResourceId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5446,7 +5448,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /managed/resources/{resourceId}/status:
     get:
       tags:
@@ -5462,6 +5463,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "ResourceId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5473,7 +5475,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/{application}/environment/{environment}/verifications:
     post:
       tags:
@@ -5504,6 +5505,7 @@ paths:
         schema:
           $ref: "#/definitions/OverrideVerificationRequest"
         x-exportParamName: "Payload"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5515,7 +5517,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /managed/{application}/environment/{environment}/verifications/retry:
     post:
       tags:
@@ -5552,6 +5553,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "VerificationId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5563,7 +5565,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /networks:
     get:
       tags:
@@ -5580,6 +5581,7 @@ paths:
         type: "string"
         x-exportParamName: "XRateLimitApp"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5594,7 +5596,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /networks/{cloudProvider}:
     get:
       tags:
@@ -5617,6 +5618,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "CloudProvider"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5631,7 +5633,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelineConfigs:
     get:
       tags:
@@ -5641,6 +5642,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5655,7 +5657,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelineConfigs/{pipelineConfigId}/convertToTemplate:
     get:
       tags:
@@ -5671,6 +5672,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "PipelineConfigId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5682,7 +5684,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelineConfigs/{pipelineConfigId}/history:
     get:
       tags:
@@ -5707,6 +5708,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "PipelineConfigId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5721,7 +5723,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelineTemplates:
     get:
       tags:
@@ -5740,6 +5741,7 @@ paths:
           type: "string"
         collectionFormat: "multi"
         x-exportParamName: "Scopes"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5754,7 +5756,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     post:
       tags:
       - "pipeline-templates-controller"
@@ -5772,6 +5773,7 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "PipelineTemplate"
+      deprecated: false
       responses:
         "201":
           description: "Created"
@@ -5788,7 +5790,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelineTemplates/resolve:
     get:
       tags:
@@ -5818,6 +5819,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Source"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5832,7 +5834,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelineTemplates/{id}:
     get:
       tags:
@@ -5848,6 +5849,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5862,7 +5864,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     post:
       tags:
       - "pipeline-templates-controller"
@@ -5894,6 +5895,7 @@ paths:
         default: false
         x-exportParamName: "SkipPlanDependents"
         x-optionalDataType: "Bool"
+      deprecated: false
       responses:
         "201":
           description: "Created"
@@ -5910,7 +5912,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     delete:
       tags:
       - "pipeline-templates-controller"
@@ -5932,6 +5933,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "202":
           description: "Accepted"
@@ -5946,7 +5948,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /pipelineTemplates/{id}/dependents:
     get:
       tags:
@@ -5969,6 +5970,7 @@ paths:
         type: "boolean"
         x-exportParamName: "Recursive"
         x-optionalDataType: "Bool"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -5983,7 +5985,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines:
     post:
       tags:
@@ -6010,6 +6011,7 @@ paths:
         default: false
         x-exportParamName: "StaleCheck"
         x-optionalDataType: "Bool"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6021,7 +6023,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/move:
     post:
       tags:
@@ -6040,6 +6041,7 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "RenameCommand"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6051,7 +6053,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/start:
     post:
       tags:
@@ -6070,6 +6071,7 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "Map_"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6083,7 +6085,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/v2/{application}/{pipelineNameOrId}:
     post:
       tags:
@@ -6114,6 +6115,8 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "Trigger"
+        x-optionalDataType: "Interface{}"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6127,7 +6130,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/{application}/{pipelineNameOrId}:
     post:
       tags:
@@ -6158,6 +6160,8 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "Trigger"
+        x-optionalDataType: "Interface{}"
+      deprecated: false
       responses:
         "201":
           description: "Created"
@@ -6171,7 +6175,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/{application}/{pipelineName}:
     delete:
       tags:
@@ -6193,6 +6196,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "PipelineName"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6202,7 +6206,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /pipelines/{id}:
     get:
       tags:
@@ -6218,6 +6221,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6229,7 +6233,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     put:
       tags:
       - "pipeline-controller"
@@ -6253,6 +6256,7 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "Pipeline"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6269,7 +6273,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     delete:
       tags:
       - "pipeline-controller"
@@ -6284,6 +6287,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6298,7 +6302,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /pipelines/{id}/cancel:
     put:
       tags:
@@ -6331,6 +6334,7 @@ paths:
         type: "string"
         x-exportParamName: "Reason"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6342,7 +6346,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/{id}/evaluateExpression:
     get:
       tags:
@@ -6364,6 +6367,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6378,14 +6382,13 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     post:
       tags:
       - "pipeline-controller"
       summary: "Evaluate a pipeline expression using the provided execution as context"
-      operationId: "evaluateExpressionForExecutionViaPOSTUsingPOST_1"
+      operationId: "evaluateExpressionForExecutionViaPOSTUsingPOST"
       consumes:
-      - "application/json"
+      - "text/plain"
       produces:
       - "*/*"
       parameters:
@@ -6400,8 +6403,9 @@ paths:
         description: "pipelineExpression"
         required: true
         schema:
-          type: "object"
+          type: "string"
         x-exportParamName: "PipelineExpression"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6418,7 +6422,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/{id}/evaluateVariables:
     post:
       tags:
@@ -6445,7 +6448,7 @@ paths:
         schema:
           type: "array"
           items:
-            $ref: "#/definitions/Map«string,string»"
+            $ref: "#/definitions/MapÂ«string,stringÂ»"
         x-examples:
           application/json: "[{\"key\":\"a\",\"value\":\"1\"},{\"key\":\"b\",\"value\"\
             :\"2\"},{\"key\":\"sum\",\"value\":\"${a+b}\"}]"
@@ -6467,6 +6470,7 @@ paths:
         allowEmptyValue: false
         x-exportParamName: "SpelVersion"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6483,7 +6487,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/{id}/pause:
     put:
       tags:
@@ -6501,6 +6504,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6512,7 +6516,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/{id}/resume:
     put:
       tags:
@@ -6530,6 +6533,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6546,7 +6550,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/{id}/stages/{stageId}:
     patch:
       tags:
@@ -6577,6 +6580,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "StageId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6591,7 +6595,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /pipelines/{id}/stages/{stageId}/restart:
     put:
       tags:
@@ -6622,6 +6625,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "StageId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6638,7 +6642,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pipelines/{id}/{stageId}/evaluateExpression:
     get:
       tags:
@@ -6667,6 +6670,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "StageId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6681,7 +6685,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /plugins/deck/plugin-manifest.json:
     get:
       tags:
@@ -6691,6 +6694,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6704,7 +6708,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /plugins/deck/{pluginId}/{pluginVersion}/{asset}:
     get:
       tags:
@@ -6732,6 +6735,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "PluginVersion"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6743,7 +6747,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /plugins/info:
     get:
       tags:
@@ -6760,6 +6763,7 @@ paths:
         type: "string"
         x-exportParamName: "Service"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6774,7 +6778,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     post:
       tags:
       - "plugin-info-controller"
@@ -6792,6 +6795,7 @@ paths:
         schema:
           $ref: "#/definitions/SpinnakerPluginInfo"
         x-exportParamName: "PluginInfo"
+      deprecated: false
       responses:
         "201":
           description: "Created"
@@ -6805,7 +6809,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     put:
       tags:
       - "plugin-info-controller"
@@ -6823,6 +6826,7 @@ paths:
         schema:
           $ref: "#/definitions/SpinnakerPluginInfo"
         x-exportParamName: "PluginInfo"
+      deprecated: false
       responses:
         "201":
           description: "Created"
@@ -6836,7 +6840,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /plugins/info/{id}:
     delete:
       tags:
@@ -6852,6 +6855,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "202":
           description: "Accepted"
@@ -6863,7 +6867,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /plugins/installed:
     get:
       tags:
@@ -6880,6 +6883,7 @@ paths:
         type: "string"
         x-exportParamName: "Service"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6895,7 +6899,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /plugins/publish/{pluginId}/{pluginVersion}:
     post:
       tags:
@@ -6930,6 +6933,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "PluginVersion"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6941,7 +6945,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /projects:
     get:
       tags:
@@ -6951,6 +6954,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6965,7 +6969,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /projects/{id}:
     get:
       tags:
@@ -6981,6 +6984,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -6995,7 +6999,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /projects/{id}/clusters:
     get:
       tags:
@@ -7018,6 +7021,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7032,7 +7036,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /projects/{id}/pipelines:
     get:
       tags:
@@ -7064,6 +7067,7 @@ paths:
         type: "string"
         x-exportParamName: "Statuses"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7078,7 +7082,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /pubsub/subscriptions:
     get:
       tags:
@@ -7088,20 +7091,20 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
           schema:
             type: "array"
             items:
-              $ref: "#/definitions/Map«string,string»"
+              $ref: "#/definitions/MapÂ«string,stringÂ»"
         "401":
           description: "Unauthorized"
         "403":
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /search:
     get:
       tags:
@@ -7164,6 +7167,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Type_"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7178,7 +7182,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /securityGroups:
     get:
       tags:
@@ -7203,6 +7206,7 @@ paths:
         type: "string"
         x-exportParamName: "Id"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7214,7 +7218,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /securityGroups/{account}:
     get:
       tags:
@@ -7246,6 +7249,7 @@ paths:
         default: "aws"
         x-exportParamName: "Provider"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7257,7 +7261,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /securityGroups/{account}/{region}/{name}:
     get:
       tags:
@@ -7307,6 +7310,7 @@ paths:
         type: "string"
         x-exportParamName: "VpcId"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7318,7 +7322,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /subnets:
     get:
       tags:
@@ -7328,6 +7331,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7342,7 +7346,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /subnets/{cloudProvider}:
     get:
       tags:
@@ -7358,6 +7361,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "CloudProvider"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7372,7 +7376,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /tasks:
     post:
       tags:
@@ -7391,6 +7394,7 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "Map_"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7407,7 +7411,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /tasks/cancel:
     put:
       tags:
@@ -7428,6 +7431,7 @@ paths:
           type: "string"
         collectionFormat: "multi"
         x-exportParamName: "Ids"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7444,7 +7448,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /tasks/{id}:
     get:
       tags:
@@ -7460,6 +7463,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7474,7 +7478,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     delete:
       tags:
       - "task-controller"
@@ -7489,6 +7492,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7503,7 +7507,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /tasks/{id}/cancel:
     put:
       tags:
@@ -7521,6 +7524,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7537,7 +7541,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /tasks/{id}/details/{taskDetailsId}:
     get:
       tags:
@@ -7566,6 +7569,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "TaskDetailsId"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7580,7 +7584,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/builds:
     get:
       tags:
@@ -7598,6 +7601,7 @@ paths:
         type: "string"
         x-exportParamName: "Type_"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7612,7 +7616,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/builds/{buildMaster}/build/{number}/**:
     get:
       tags:
@@ -7635,6 +7638,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Number"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7649,7 +7653,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/builds/{buildMaster}/builds/**:
     get:
       tags:
@@ -7666,6 +7669,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "BuildMaster"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7680,7 +7684,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/builds/{buildMaster}/jobs:
     get:
       tags:
@@ -7697,6 +7700,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "BuildMaster"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7711,7 +7715,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/builds/{buildMaster}/jobs/**:
     get:
       tags:
@@ -7728,6 +7731,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "BuildMaster"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7742,7 +7746,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaries/canary:
     post:
       tags:
@@ -7789,6 +7792,7 @@ paths:
         type: "string"
         x-exportParamName: "StorageAccountName"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7802,7 +7806,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaries/canary/{canaryConfigId}:
     post:
       tags:
@@ -7862,6 +7865,7 @@ paths:
         type: "string"
         x-exportParamName: "StorageAccountName"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7875,7 +7879,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaries/canary/{canaryConfigId}/{canaryExecutionId}:
     get:
       tags:
@@ -7904,6 +7907,7 @@ paths:
         type: "string"
         x-exportParamName: "StorageAccountName"
         x-optionalDataType: "String"
+      deprecated: true
       responses:
         "200":
           description: "OK"
@@ -7915,7 +7919,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: true
   /v2/canaries/canary/{canaryExecutionId}:
     get:
       tags:
@@ -7938,6 +7941,7 @@ paths:
         type: "string"
         x-exportParamName: "StorageAccountName"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7949,7 +7953,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaries/credentials:
     get:
       tags:
@@ -7959,6 +7962,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7973,7 +7977,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaries/judges:
     get:
       tags:
@@ -7983,6 +7986,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -7997,7 +8001,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaries/metadata/metricsService:
     get:
       tags:
@@ -8022,6 +8025,7 @@ paths:
         type: "string"
         x-exportParamName: "MetricsAccountName"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8036,7 +8040,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaries/metricSetPairList/{metricSetPairListId}:
     get:
       tags:
@@ -8059,6 +8062,7 @@ paths:
         type: "string"
         x-exportParamName: "StorageAccountName"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8073,7 +8077,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaries/{application}/executions:
     get:
       tags:
@@ -8121,6 +8124,7 @@ paths:
         type: "string"
         x-exportParamName: "StorageAccountName"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8135,7 +8139,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaryConfig:
     get:
       tags:
@@ -8159,6 +8162,7 @@ paths:
         type: "string"
         x-exportParamName: "ConfigurationAccountName"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8173,7 +8177,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     post:
       tags:
       - "v-2-canary-config-controller"
@@ -8198,6 +8201,7 @@ paths:
         type: "string"
         x-exportParamName: "ConfigurationAccountName"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8211,7 +8215,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/canaryConfig/{id}:
     get:
       tags:
@@ -8234,6 +8237,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8245,7 +8249,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     put:
       tags:
       - "v-2-canary-config-controller"
@@ -8276,6 +8279,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8289,7 +8293,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     delete:
       tags:
       - "v-2-canary-config-controller"
@@ -8311,6 +8314,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8320,7 +8324,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /v2/pipelineTemplates:
     get:
       tags:
@@ -8339,6 +8342,7 @@ paths:
           type: "string"
         collectionFormat: "multi"
         x-exportParamName: "Scopes"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8353,7 +8357,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/pipelineTemplates/create:
     post:
       tags:
@@ -8379,6 +8382,7 @@ paths:
         type: "string"
         x-exportParamName: "Tag"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8395,7 +8399,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/pipelineTemplates/plan:
     post:
       tags:
@@ -8414,6 +8417,7 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "Pipeline"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8430,7 +8434,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/pipelineTemplates/update/{id}:
     post:
       tags:
@@ -8470,6 +8473,7 @@ paths:
         type: "string"
         x-exportParamName: "Tag"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8486,7 +8490,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/pipelineTemplates/versions:
     get:
       tags:
@@ -8505,6 +8508,7 @@ paths:
           type: "string"
         collectionFormat: "multi"
         x-exportParamName: "Scopes"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8516,7 +8520,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v2/pipelineTemplates/{id}:
     get:
       tags:
@@ -8546,6 +8549,7 @@ paths:
         type: "string"
         x-exportParamName: "Tag"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8560,7 +8564,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
     delete:
       tags:
       - "v-2-pipeline-templates-controller"
@@ -8596,6 +8599,7 @@ paths:
         type: "string"
         x-exportParamName: "Tag"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8610,7 +8614,6 @@ paths:
           description: "Unauthorized"
         "403":
           description: "Forbidden"
-      deprecated: false
   /v2/pipelineTemplates/{id}/dependents:
     get:
       tags:
@@ -8626,6 +8629,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Id"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8640,7 +8644,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v3/builds:
     get:
       tags:
@@ -8657,6 +8660,7 @@ paths:
         type: "string"
         x-exportParamName: "Type_"
         x-optionalDataType: "String"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8671,7 +8675,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v3/builds/{buildMaster}/build/{number}:
     get:
       tags:
@@ -8699,6 +8702,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Number"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8713,7 +8717,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v3/builds/{buildMaster}/builds:
     get:
       tags:
@@ -8735,6 +8738,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Job"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8749,7 +8753,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v3/builds/{buildMaster}/job:
     get:
       tags:
@@ -8771,6 +8774,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Job"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8785,7 +8789,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /v3/builds/{buildMaster}/jobs:
     get:
       tags:
@@ -8801,6 +8804,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "BuildMaster"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8815,7 +8819,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /version:
     get:
       tags:
@@ -8825,6 +8828,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8836,7 +8840,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /vpcs:
     get:
       tags:
@@ -8846,6 +8849,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: true
       responses:
         "200":
           description: "OK"
@@ -8860,7 +8864,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: true
   /webhooks/preconfigured:
     get:
       tags:
@@ -8870,6 +8873,7 @@ paths:
       produces:
       - "*/*"
       parameters: []
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8884,7 +8888,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
   /webhooks/{type}/{source}:
     post:
       tags:
@@ -8917,6 +8920,7 @@ paths:
         schema:
           type: "object"
         x-exportParamName: "Event"
+        x-optionalDataType: "Interface{}"
       - name: "source"
         in: "path"
         description: "source"
@@ -8929,6 +8933,7 @@ paths:
         required: true
         type: "string"
         x-exportParamName: "Type_"
+      deprecated: false
       responses:
         "200":
           description: "OK"
@@ -8942,7 +8947,6 @@ paths:
           description: "Forbidden"
         "404":
           description: "Not Found"
-      deprecated: false
 definitions:
   Account:
     type: "object"
@@ -9071,7 +9075,7 @@ definitions:
       artifacts:
         type: "array"
         items:
-          $ref: "#/definitions/Map«string,object»"
+          $ref: "#/definitions/MapÂ«string,objectÂ»"
       environments:
         type: "array"
         items:
@@ -9344,7 +9348,7 @@ definitions:
       constraints:
         type: "array"
         items:
-          $ref: "#/definitions/Map«string,object»"
+          $ref: "#/definitions/MapÂ«string,objectÂ»"
       locations:
         type: "object"
         properties: {}
@@ -9361,7 +9365,7 @@ definitions:
       verifyWith:
         type: "array"
         items:
-          $ref: "#/definitions/Map«string,object»"
+          $ref: "#/definitions/MapÂ«string,objectÂ»"
     title: "Environment"
     example:
       verifyWith:
@@ -9605,9 +9609,9 @@ definitions:
         type: "object"
         properties: {}
     title: "GraphQLRequest"
-  HashMap«string,object»:
+  HashMapÂ«string,objectÂ»:
     type: "object"
-    title: "HashMap«string,object»"
+    title: "HashMapÂ«string,objectÂ»"
     additionalProperties:
       type: "object"
       properties: {}
@@ -9673,15 +9677,15 @@ definitions:
   InputStream:
     type: "object"
     title: "InputStream"
-  Map«string,object»:
+  MapÂ«string,objectÂ»:
     type: "object"
-    title: "Map«string,object»"
+    title: "MapÂ«string,objectÂ»"
     additionalProperties:
       type: "object"
       properties: {}
-  Map«string,string»:
+  MapÂ«string,stringÂ»:
     type: "object"
-    title: "Map«string,string»"
+    title: "MapÂ«string,stringÂ»"
     additionalProperties:
       type: "string"
   Notification:

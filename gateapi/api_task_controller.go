@@ -27,7 +27,7 @@ var (
 
 type TaskControllerApiService service
 
-/* 
+/*
 TaskControllerApiService Cancel task
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -87,9 +87,7 @@ func (a *TaskControllerApiService) CancelTaskUsingPUT1(ctx context.Context, id s
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -115,7 +113,7 @@ func (a *TaskControllerApiService) CancelTaskUsingPUT1(ctx context.Context, id s
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 TaskControllerApiService Cancel tasks
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param ids ids
@@ -175,9 +173,7 @@ func (a *TaskControllerApiService) CancelTasksUsingPUT(ctx context.Context, ids 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -203,7 +199,7 @@ func (a *TaskControllerApiService) CancelTasksUsingPUT(ctx context.Context, ids 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 TaskControllerApiService Delete task
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -263,9 +259,7 @@ func (a *TaskControllerApiService) DeleteTaskUsingDELETE(ctx context.Context, id
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -291,7 +285,7 @@ func (a *TaskControllerApiService) DeleteTaskUsingDELETE(ctx context.Context, id
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 TaskControllerApiService Get task details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -363,9 +357,7 @@ func (a *TaskControllerApiService) GetTaskDetailsUsingGET1(ctx context.Context, 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -391,7 +383,7 @@ func (a *TaskControllerApiService) GetTaskDetailsUsingGET1(ctx context.Context, 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 TaskControllerApiService Get task
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -451,9 +443,7 @@ func (a *TaskControllerApiService) GetTaskUsingGET1(ctx context.Context, id stri
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -479,7 +469,7 @@ func (a *TaskControllerApiService) GetTaskUsingGET1(ctx context.Context, id stri
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 TaskControllerApiService Create task
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param map_ map
@@ -540,9 +530,7 @@ func (a *TaskControllerApiService) TaskUsingPOST1(ctx context.Context, map_ inte
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -567,3 +555,4 @@ func (a *TaskControllerApiService) TaskUsingPOST1(ctx context.Context, map_ inte
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

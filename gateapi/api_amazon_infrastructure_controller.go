@@ -27,7 +27,7 @@ var (
 
 type AmazonInfrastructureControllerApiService service
 
-/* 
+/*
 AmazonInfrastructureControllerApiService Get application functions
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -87,9 +87,7 @@ func (a *AmazonInfrastructureControllerApiService) ApplicationFunctionsUsingGET(
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -115,7 +113,7 @@ func (a *AmazonInfrastructureControllerApiService) ApplicationFunctionsUsingGET(
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 AmazonInfrastructureControllerApiService Get functions
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *AmazonInfrastructureControllerApiFunctionsUsingGETOpts - Optional Parameters:
@@ -193,9 +191,7 @@ func (a *AmazonInfrastructureControllerApiService) FunctionsUsingGET(ctx context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -221,7 +217,7 @@ func (a *AmazonInfrastructureControllerApiService) FunctionsUsingGET(ctx context
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 AmazonInfrastructureControllerApiService Get instance types
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -279,9 +275,7 @@ func (a *AmazonInfrastructureControllerApiService) InstanceTypesUsingGET(ctx con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -307,7 +301,7 @@ func (a *AmazonInfrastructureControllerApiService) InstanceTypesUsingGET(ctx con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 AmazonInfrastructureControllerApiService Get subnets
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -365,9 +359,7 @@ func (a *AmazonInfrastructureControllerApiService) SubnetsUsingGET(ctx context.C
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -393,7 +385,7 @@ func (a *AmazonInfrastructureControllerApiService) SubnetsUsingGET(ctx context.C
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 AmazonInfrastructureControllerApiService Get VPCs
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -451,9 +443,7 @@ func (a *AmazonInfrastructureControllerApiService) VpcsUsingGET(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -478,3 +468,4 @@ func (a *AmazonInfrastructureControllerApiService) VpcsUsingGET(ctx context.Cont
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

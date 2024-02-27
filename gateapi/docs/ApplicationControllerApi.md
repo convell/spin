@@ -43,7 +43,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -103,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -226,7 +226,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -290,7 +290,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -416,7 +416,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -449,7 +449,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **trigger** | [**optional.Interface of interface{}**](interface{}.md)| trigger | 
+ **trigger** | **optional.Interface{}**| trigger | 
  **user** | **optional.String**| user | 
 
 ### Return type
@@ -477,11 +477,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **application** | **string**| application | 
-  **map_** | [**interface{}**](interface{}.md)| map | 
+  **map_** | **interface{}**| map | 
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 

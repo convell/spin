@@ -27,7 +27,7 @@ var (
 
 type InstanceControllerApiService service
 
-/* 
+/*
 InstanceControllerApiService Retrieve an instance&#39;s console output
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -106,9 +106,7 @@ func (a *InstanceControllerApiService) GetConsoleOutputUsingGET(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -134,7 +132,7 @@ func (a *InstanceControllerApiService) GetConsoleOutputUsingGET(ctx context.Cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 InstanceControllerApiService Retrieve an instance&#39;s details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -208,9 +206,7 @@ func (a *InstanceControllerApiService) GetInstanceDetailsUsingGET(ctx context.Co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -235,3 +231,4 @@ func (a *InstanceControllerApiService) GetInstanceDetailsUsingGET(ctx context.Co
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

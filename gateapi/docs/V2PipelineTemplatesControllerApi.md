@@ -23,7 +23,7 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **pipelineTemplate** | [**interface{}**](interface{}.md)| pipelineTemplate | 
+  **pipelineTemplate** | **interface{}**| pipelineTemplate | 
  **optional** | ***V2PipelineTemplatesControllerApiCreateUsingPOST1Opts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**interface{}**](interface{}.md)
+**interface{}**
 
 ### Authorization
 
@@ -223,11 +223,11 @@ No authorization required
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **pipeline** | [**interface{}**](interface{}.md)| pipeline | 
+  **pipeline** | **interface{}**| pipeline | 
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **id** | **string**| id | 
-  **pipelineTemplate** | [**interface{}**](interface{}.md)| pipelineTemplate | 
+  **pipelineTemplate** | **interface{}**| pipelineTemplate | 
  **optional** | ***V2PipelineTemplatesControllerApiUpdateUsingPOST1Opts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 

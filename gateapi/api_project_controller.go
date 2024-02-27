@@ -27,7 +27,7 @@ var (
 
 type ProjectControllerApiService service
 
-/* 
+/*
 ProjectControllerApiService Get all pipelines for project
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -102,9 +102,7 @@ func (a *ProjectControllerApiService) AllPipelinesForProjectUsingGET(ctx context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -130,7 +128,7 @@ func (a *ProjectControllerApiService) AllPipelinesForProjectUsingGET(ctx context
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ProjectControllerApiService Get all projects
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -188,9 +186,7 @@ func (a *ProjectControllerApiService) AllUsingGET3(ctx context.Context) ([]inter
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -216,7 +212,7 @@ func (a *ProjectControllerApiService) AllUsingGET3(ctx context.Context) ([]inter
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ProjectControllerApiService Get a project&#39;s clusters
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -286,9 +282,7 @@ func (a *ProjectControllerApiService) GetClustersUsingGET3(ctx context.Context, 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -314,7 +308,7 @@ func (a *ProjectControllerApiService) GetClustersUsingGET3(ctx context.Context, 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ProjectControllerApiService Get a project
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -374,9 +368,7 @@ func (a *ProjectControllerApiService) GetUsingGET1(ctx context.Context, id strin
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -401,3 +393,4 @@ func (a *ProjectControllerApiService) GetUsingGET1(ctx context.Context, id strin
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

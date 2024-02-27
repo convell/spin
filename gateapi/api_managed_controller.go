@@ -27,7 +27,7 @@ var (
 
 type ManagedControllerApiService service
 
-/* 
+/*
 ManagedControllerApiService Create a pin for an artifact in an environment
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -100,7 +100,7 @@ func (a *ManagedControllerApiService) CreatePinUsingPOST(ctx context.Context, ap
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Delete a delivery config manifest for an application
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -160,9 +160,7 @@ func (a *ManagedControllerApiService) DeleteManifestByAppUsingDELETE(ctx context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -188,7 +186,7 @@ func (a *ManagedControllerApiService) DeleteManifestByAppUsingDELETE(ctx context
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Delete a delivery config manifest
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param name name
@@ -248,9 +246,7 @@ func (a *ManagedControllerApiService) DeleteManifestUsingDELETE(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -276,7 +272,7 @@ func (a *ManagedControllerApiService) DeleteManifestUsingDELETE(ctx context.Cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Unpin one or more artifact(s) in an environment. If the &#x60;reference&#x60; parameter is specified, only the corresponding artifact will be unpinned. If it&#39;s omitted, all pinned artifacts in the environment will be unpinned.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -358,7 +354,7 @@ func (a *ManagedControllerApiService) DeletePinUsingDELETE(ctx context.Context, 
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Remove veto of an artifact version in an environment
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -434,7 +430,7 @@ func (a *ManagedControllerApiService) DeleteVetoUsingDELETE(ctx context.Context,
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Ad-hoc validate and diff a config manifest
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param manifest manifest
@@ -495,9 +491,7 @@ func (a *ManagedControllerApiService) DiffManifestUsingPOST(ctx context.Context,
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -523,7 +517,7 @@ func (a *ManagedControllerApiService) DiffManifestUsingPOST(ctx context.Context,
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Ad-hoc validate and diff a resource
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param resource resource
@@ -584,9 +578,7 @@ func (a *ManagedControllerApiService) DiffResourceUsingPOST(ctx context.Context,
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -612,7 +604,7 @@ func (a *ManagedControllerApiService) DiffResourceUsingPOST(ctx context.Context,
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Generates an artifact definition based on the artifact used in a running cluster
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -676,9 +668,7 @@ func (a *ManagedControllerApiService) ExportResourceUsingGET(ctx context.Context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -704,7 +694,7 @@ func (a *ManagedControllerApiService) ExportResourceUsingGET(ctx context.Context
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Generate a keel resource definition for a deployed cloud resource
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -772,9 +762,7 @@ func (a *ManagedControllerApiService) ExportResourceUsingGET1(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -800,7 +788,7 @@ func (a *ManagedControllerApiService) ExportResourceUsingGET1(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get a report of Managed Delivery adoption
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param params params
@@ -860,9 +848,7 @@ func (a *ManagedControllerApiService) GetAdoptionReportUsingGET(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -888,7 +874,7 @@ func (a *ManagedControllerApiService) GetAdoptionReportUsingGET(ctx context.Cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get managed details about an application
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -968,9 +954,7 @@ func (a *ManagedControllerApiService) GetApplicationDetailsUsingGET(ctx context.
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -996,7 +980,7 @@ func (a *ManagedControllerApiService) GetApplicationDetailsUsingGET(ctx context.
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get the delivery config associated with an application
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -1056,9 +1040,7 @@ func (a *ManagedControllerApiService) GetConfigByUsingGET(ctx context.Context, a
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1084,7 +1066,7 @@ func (a *ManagedControllerApiService) GetConfigByUsingGET(ctx context.Context, a
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService List up-to {limit} current constraint states for an environment
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -1156,9 +1138,7 @@ func (a *ManagedControllerApiService) GetConstraintStateUsingGET(ctx context.Con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1184,7 +1164,7 @@ func (a *ManagedControllerApiService) GetConstraintStateUsingGET(ctx context.Con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get current environment details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -1244,9 +1224,7 @@ func (a *ManagedControllerApiService) GetEnvironmentsUsingGET(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1272,7 +1250,7 @@ func (a *ManagedControllerApiService) GetEnvironmentsUsingGET(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get the status of each version of each artifact in each environment
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param name name
@@ -1332,9 +1310,7 @@ func (a *ManagedControllerApiService) GetManifestArtifactsUsingGET(ctx context.C
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1360,7 +1336,7 @@ func (a *ManagedControllerApiService) GetManifestArtifactsUsingGET(ctx context.C
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get a delivery config manifest
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param name name
@@ -1420,9 +1396,7 @@ func (a *ManagedControllerApiService) GetManifestUsingGET(ctx context.Context, n
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1448,7 +1422,7 @@ func (a *ManagedControllerApiService) GetManifestUsingGET(ctx context.Context, n
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get a delivery config manifest
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param name name
@@ -1508,9 +1482,7 @@ func (a *ManagedControllerApiService) GetManifestYamlUsingGET(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1536,7 +1508,7 @@ func (a *ManagedControllerApiService) GetManifestYamlUsingGET(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get a report of application onboarding
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accept Accept
@@ -1598,9 +1570,7 @@ func (a *ManagedControllerApiService) GetOnboardingReportUsingGET(ctx context.Co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1626,7 +1596,7 @@ func (a *ManagedControllerApiService) GetOnboardingReportUsingGET(ctx context.Co
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get status of a resource
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param resourceId resourceId
@@ -1686,9 +1656,7 @@ func (a *ManagedControllerApiService) GetResourceStatusUsingGET(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1714,7 +1682,7 @@ func (a *ManagedControllerApiService) GetResourceStatusUsingGET(ctx context.Cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get a resource
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param resourceId resourceId
@@ -1774,9 +1742,7 @@ func (a *ManagedControllerApiService) GetResourceUsingGET(ctx context.Context, r
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1802,7 +1768,7 @@ func (a *ManagedControllerApiService) GetResourceUsingGET(ctx context.Context, r
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Get a resource
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param resourceId resourceId
@@ -1862,9 +1828,7 @@ func (a *ManagedControllerApiService) GetResourceYamlUsingGET(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1890,7 +1854,7 @@ func (a *ManagedControllerApiService) GetResourceYamlUsingGET(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Post a graphql request
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param query query
@@ -1951,9 +1915,7 @@ func (a *ManagedControllerApiService) GraphqlUsingPOST(ctx context.Context, quer
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1979,7 +1941,7 @@ func (a *ManagedControllerApiService) GraphqlUsingPOST(ctx context.Context, quer
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Veto an artifact version in an environment
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -2052,7 +2014,7 @@ func (a *ManagedControllerApiService) MarkBadUsingPOST(ctx context.Context, appl
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Delete veto of an artifact version in an environment
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -2125,7 +2087,7 @@ func (a *ManagedControllerApiService) MarkGoodUsingPOST(ctx context.Context, app
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Override the status of a verification
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -2200,7 +2162,7 @@ func (a *ManagedControllerApiService) OverrideVerificationUsingPOST(ctx context.
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Pause management of an entire application
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -2270,7 +2232,7 @@ func (a *ManagedControllerApiService) PauseApplicationUsingPOST(ctx context.Cont
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Pause management of a resource
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param resourceId resourceId
@@ -2340,7 +2302,7 @@ func (a *ManagedControllerApiService) PauseResourceUsingPOST(ctx context.Context
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService processNotificationCallback
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param source source
@@ -3120,9 +3082,7 @@ func (a *ManagedControllerApiService) ProcessNotificationCallbackUsingPOST(ctx c
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -3148,7 +3108,7 @@ func (a *ManagedControllerApiService) ProcessNotificationCallbackUsingPOST(ctx c
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Resume management of an entire application
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -3218,7 +3178,7 @@ func (a *ManagedControllerApiService) ResumeApplicationUsingDELETE(ctx context.C
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Resume management of a resource
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param resourceId resourceId
@@ -3288,7 +3248,7 @@ func (a *ManagedControllerApiService) ResumeResourceUsingDELETE(ctx context.Cont
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Retry a verification
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -3365,7 +3325,7 @@ func (a *ManagedControllerApiService) RetryVerificationUsingPOST(ctx context.Con
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Ad-hoc validate and diff a config manifest
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -3423,9 +3383,7 @@ func (a *ManagedControllerApiService) SchemaUsingGET(ctx context.Context) (inter
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -3451,7 +3409,7 @@ func (a *ManagedControllerApiService) SchemaUsingGET(ctx context.Context) (inter
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Update the status of an environment constraint
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -3526,7 +3484,7 @@ func (a *ManagedControllerApiService) UpdateConstraintStatusUsingPOST(ctx contex
 	return localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Create or update a delivery config manifest
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param manifest manifest
@@ -3587,9 +3545,7 @@ func (a *ManagedControllerApiService) UpsertManifestUsingPOST(ctx context.Contex
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -3615,7 +3571,7 @@ func (a *ManagedControllerApiService) UpsertManifestUsingPOST(ctx context.Contex
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Validate a delivery config manifest
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param manifest manifest
@@ -3676,9 +3632,7 @@ func (a *ManagedControllerApiService) ValidateManifestUsingPOST(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -3704,7 +3658,7 @@ func (a *ManagedControllerApiService) ValidateManifestUsingPOST(ctx context.Cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ManagedControllerApiService Veto an artifact version in an environment
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -3776,3 +3730,4 @@ func (a *ManagedControllerApiService) VetoUsingPOST(ctx context.Context, applica
 
 	return localVarHttpResponse, nil
 }
+

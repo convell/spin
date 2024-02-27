@@ -26,7 +26,7 @@ var (
 
 type DeckPluginsControllerApiService service
 
-/* 
+/*
 DeckPluginsControllerApiService Retrieve a single plugin asset by version
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param asset asset
@@ -90,9 +90,7 @@ func (a *DeckPluginsControllerApiService) GetPluginAssetUsingGET(ctx context.Con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -118,7 +116,7 @@ func (a *DeckPluginsControllerApiService) GetPluginAssetUsingGET(ctx context.Con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 DeckPluginsControllerApiService Retrieve a plugin manifest
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -176,9 +174,7 @@ func (a *DeckPluginsControllerApiService) GetPluginManifestUsingGET(ctx context.
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -203,3 +199,4 @@ func (a *DeckPluginsControllerApiService) GetPluginManifestUsingGET(ctx context.
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

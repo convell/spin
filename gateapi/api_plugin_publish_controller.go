@@ -27,7 +27,7 @@ var (
 
 type PluginPublishControllerApiService service
 
-/* 
+/*
 PluginPublishControllerApiService Publish a plugin binary and the plugin info metadata.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param plugin plugin
@@ -108,3 +108,4 @@ func (a *PluginPublishControllerApiService) PublishPluginUsingPOST(ctx context.C
 
 	return localVarHttpResponse, nil
 }
+

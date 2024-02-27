@@ -1,4 +1,3 @@
-
 /*
  * Spinnaker API
  *
@@ -12,11 +11,12 @@ package swagger
 
 import (
 	"context"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
-	"fmt"
+
 	"github.com/antihax/optional"
 )
 
@@ -27,7 +27,7 @@ var (
 
 type WebhookControllerApiService service
 
-/* 
+/*
 WebhookControllerApiService Retrieve a list of preconfigured webhooks in Orca
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 
@@ -85,9 +85,7 @@ func (a *WebhookControllerApiService) PreconfiguredWebhooksUsingGET(ctx context.
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -113,7 +111,7 @@ func (a *WebhookControllerApiService) PreconfiguredWebhooksUsingGET(ctx context.
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 WebhookControllerApiService Endpoint for posting webhooks to Spinnaker&#39;s webhook service
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param source source
@@ -121,7 +119,7 @@ WebhookControllerApiService Endpoint for posting webhooks to Spinnaker&#39;s web
  * @param optional nil or *WebhookControllerApiWebhooksUsingPOSTOpts - Optional Parameters:
      * @param "XEventKey" (optional.String) -  X-Event-Key
      * @param "XHubSignature" (optional.String) -  X-Hub-Signature
-     * @param "Event" (optional.Interface of interface{}) -  event
+     * @param "Event" (optional.Interface{}) -  event
 
 @return interface{}
 */
@@ -175,7 +173,6 @@ func (a *WebhookControllerApiService) WebhooksUsingPOST(ctx context.Context, sou
 	}
 	// body params
 	if localVarOptionals != nil && localVarOptionals.Event.IsSet() {
-		
 		localVarOptionalEvent, localVarOptionalEventok := localVarOptionals.Event.Value().(interface{})
 		if !localVarOptionalEventok {
 				return localVarReturnValue, nil, reportError("event should be interface{}")
@@ -201,9 +198,7 @@ func (a *WebhookControllerApiService) WebhooksUsingPOST(ctx context.Context, sou
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -228,3 +223,4 @@ func (a *WebhookControllerApiService) WebhooksUsingPOST(ctx context.Context, sou
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

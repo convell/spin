@@ -27,7 +27,7 @@ var (
 
 type ArtifactControllerApiService service
 
-/* 
+/*
 ArtifactControllerApiService Retrieve the list of artifact accounts configured in Clouddriver.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *ArtifactControllerApiAllUsingGETOpts - Optional Parameters:
@@ -95,9 +95,7 @@ func (a *ArtifactControllerApiService) AllUsingGET(ctx context.Context, localVar
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -123,7 +121,7 @@ func (a *ArtifactControllerApiService) AllUsingGET(ctx context.Context, localVar
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ArtifactControllerApiService Retrieve the list of artifact versions by account and artifact names
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountName accountName
@@ -197,9 +195,7 @@ func (a *ArtifactControllerApiService) ArtifactVersionsUsingGET(ctx context.Cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -225,7 +221,7 @@ func (a *ArtifactControllerApiService) ArtifactVersionsUsingGET(ctx context.Cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ArtifactControllerApiService Retrieve the specified artifact version for an artifact provider and package name
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param packageName packageName
@@ -289,9 +285,7 @@ func (a *ArtifactControllerApiService) GetArtifactUsingGET(ctx context.Context, 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -316,3 +310,4 @@ func (a *ArtifactControllerApiService) GetArtifactUsingGET(ctx context.Context, 
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

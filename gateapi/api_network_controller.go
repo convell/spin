@@ -27,7 +27,7 @@ var (
 
 type NetworkControllerApiService service
 
-/* 
+/*
 NetworkControllerApiService Retrieve a list of networks for a given cloud provider
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param cloudProvider cloudProvider
@@ -97,9 +97,7 @@ func (a *NetworkControllerApiService) AllByCloudProviderUsingGET(ctx context.Con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -125,7 +123,7 @@ func (a *NetworkControllerApiService) AllByCloudProviderUsingGET(ctx context.Con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 NetworkControllerApiService Retrieve a list of networks, grouped by cloud provider
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *NetworkControllerApiAllUsingGET2Opts - Optional Parameters:
@@ -193,9 +191,7 @@ func (a *NetworkControllerApiService) AllUsingGET2(ctx context.Context, localVar
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -220,3 +216,4 @@ func (a *NetworkControllerApiService) AllUsingGET2(ctx context.Context, localVar
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

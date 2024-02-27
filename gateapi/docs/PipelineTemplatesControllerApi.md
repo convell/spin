@@ -22,7 +22,7 @@ Create a pipeline template.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **pipelineTemplate** | [**interface{}**](interface{}.md)| pipelineTemplate | 
+  **pipelineTemplate** | **interface{}**| pipelineTemplate | 
 
 ### Return type
 
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]interface{}**](interface{}.md)
+**[]interface{}**
 
 ### Authorization
 
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **id** | **string**| id | 
-  **pipelineTemplate** | [**interface{}**](interface{}.md)| pipelineTemplate | 
+  **pipelineTemplate** | **interface{}**| pipelineTemplate | 
  **optional** | ***PipelineTemplatesControllerApiUpdateUsingPOSTOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters

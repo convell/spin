@@ -25,7 +25,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 
@@ -162,11 +162,11 @@ Create task
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **map_** | [**interface{}**](interface{}.md)| map | 
+  **map_** | **interface{}**| map | 
 
 ### Return type
 
-[**map[string]interface{}**](interface{}.md)
+**map[string]interface{}**
 
 ### Authorization
 

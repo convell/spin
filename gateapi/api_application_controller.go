@@ -1,4 +1,3 @@
-
 /*
  * Spinnaker API
  *
@@ -12,11 +11,12 @@ package swagger
 
 import (
 	"context"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
-	"fmt"
+
 	"github.com/antihax/optional"
 )
 
@@ -27,7 +27,7 @@ var (
 
 type ApplicationControllerApiService service
 
-/* 
+/*
 ApplicationControllerApiService Cancel pipeline
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -97,9 +97,7 @@ func (a *ApplicationControllerApiService) CancelPipelineUsingPUT(ctx context.Con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -125,7 +123,7 @@ func (a *ApplicationControllerApiService) CancelPipelineUsingPUT(ctx context.Con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Cancel task
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -185,9 +183,7 @@ func (a *ApplicationControllerApiService) CancelTaskUsingPUT(ctx context.Context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -213,7 +209,7 @@ func (a *ApplicationControllerApiService) CancelTaskUsingPUT(ctx context.Context
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Retrieve a list of applications
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *ApplicationControllerApiGetAllApplicationsUsingGETOpts - Optional Parameters:
@@ -286,9 +282,7 @@ func (a *ApplicationControllerApiService) GetAllApplicationsUsingGET(ctx context
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -314,7 +308,7 @@ func (a *ApplicationControllerApiService) GetAllApplicationsUsingGET(ctx context
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Retrieve a list of an application&#39;s configuration revision history
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -384,9 +378,7 @@ func (a *ApplicationControllerApiService) GetApplicationHistoryUsingGET(ctx cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -412,7 +404,7 @@ func (a *ApplicationControllerApiService) GetApplicationHistoryUsingGET(ctx cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Retrieve an application&#39;s details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -482,9 +474,7 @@ func (a *ApplicationControllerApiService) GetApplicationUsingGET(ctx context.Con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -510,7 +500,7 @@ func (a *ApplicationControllerApiService) GetApplicationUsingGET(ctx context.Con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Retrieve a pipeline configuration
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -572,9 +562,7 @@ func (a *ApplicationControllerApiService) GetPipelineConfigUsingGET(ctx context.
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -600,7 +588,7 @@ func (a *ApplicationControllerApiService) GetPipelineConfigUsingGET(ctx context.
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Retrieve a list of an application&#39;s pipeline configurations
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -660,9 +648,7 @@ func (a *ApplicationControllerApiService) GetPipelineConfigsForApplicationUsingG
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -688,7 +674,7 @@ func (a *ApplicationControllerApiService) GetPipelineConfigsForApplicationUsingG
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Retrieve a list of an application&#39;s pipeline executions
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -768,9 +754,7 @@ func (a *ApplicationControllerApiService) GetPipelinesUsingGET(ctx context.Conte
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -796,7 +780,7 @@ func (a *ApplicationControllerApiService) GetPipelinesUsingGET(ctx context.Conte
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Retrieve a pipeline strategy configuration
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -858,9 +842,7 @@ func (a *ApplicationControllerApiService) GetStrategyConfigUsingGET(ctx context.
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -886,7 +868,7 @@ func (a *ApplicationControllerApiService) GetStrategyConfigUsingGET(ctx context.
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Retrieve a list of an application&#39;s pipeline strategy configurations
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -946,9 +928,7 @@ func (a *ApplicationControllerApiService) GetStrategyConfigsForApplicationUsingG
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -974,7 +954,7 @@ func (a *ApplicationControllerApiService) GetStrategyConfigsForApplicationUsingG
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Get task details
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -1046,9 +1026,7 @@ func (a *ApplicationControllerApiService) GetTaskDetailsUsingGET(ctx context.Con
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1074,7 +1052,7 @@ func (a *ApplicationControllerApiService) GetTaskDetailsUsingGET(ctx context.Con
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Get task
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param id id
@@ -1134,9 +1112,7 @@ func (a *ApplicationControllerApiService) GetTaskUsingGET(ctx context.Context, i
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1162,7 +1138,7 @@ func (a *ApplicationControllerApiService) GetTaskUsingGET(ctx context.Context, i
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Retrieve a list of an application&#39;s tasks
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -1242,9 +1218,7 @@ func (a *ApplicationControllerApiService) GetTasksUsingGET(ctx context.Context, 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1270,13 +1244,13 @@ func (a *ApplicationControllerApiService) GetTasksUsingGET(ctx context.Context, 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Invoke pipeline config
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
  * @param pipelineName pipelineName
  * @param optional nil or *ApplicationControllerApiInvokePipelineConfigUsingPOSTOpts - Optional Parameters:
-     * @param "Trigger" (optional.Interface of interface{}) -  trigger
+     * @param "Trigger" (optional.Interface{}) -  trigger
      * @param "User" (optional.String) -  user
 
 @return HttpEntity
@@ -1327,12 +1301,11 @@ func (a *ApplicationControllerApiService) InvokePipelineConfigUsingPOST(ctx cont
 	}
 	// body params
 	if localVarOptionals != nil && localVarOptionals.Trigger.IsSet() {
-		
-		localVarOptionalTrigger, localVarOptionalTriggerok := localVarOptionals.Trigger.Value().(interface{})
-		if !localVarOptionalTriggerok {
+		localVarOptionalEvent, localVarOptionalEventok := localVarOptionals.Trigger.Value().(interface{})
+		if !localVarOptionalEventok {
 				return localVarReturnValue, nil, reportError("trigger should be interface{}")
 		}
-		localVarPostBody = &localVarOptionalTrigger
+		localVarPostBody = &localVarOptionalEvent
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
 	if err != nil {
@@ -1353,9 +1326,7 @@ func (a *ApplicationControllerApiService) InvokePipelineConfigUsingPOST(ctx cont
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1381,7 +1352,7 @@ func (a *ApplicationControllerApiService) InvokePipelineConfigUsingPOST(ctx cont
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 ApplicationControllerApiService Create task
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -1444,9 +1415,7 @@ func (a *ApplicationControllerApiService) TaskUsingPOST(ctx context.Context, app
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -1471,3 +1440,4 @@ func (a *ApplicationControllerApiService) TaskUsingPOST(ctx context.Context, app
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+

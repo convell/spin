@@ -27,7 +27,7 @@ var (
 
 type LoadBalancerControllerApiService service
 
-/* 
+/*
 LoadBalancerControllerApiService Retrieve a list of load balancers for a given cloud provider
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *LoadBalancerControllerApiGetAllUsingGETOpts - Optional Parameters:
@@ -100,9 +100,7 @@ func (a *LoadBalancerControllerApiService) GetAllUsingGET(ctx context.Context, l
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -128,7 +126,7 @@ func (a *LoadBalancerControllerApiService) GetAllUsingGET(ctx context.Context, l
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 LoadBalancerControllerApiService Retrieve a list of load balancers for a given application
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param application application
@@ -198,9 +196,7 @@ func (a *LoadBalancerControllerApiService) GetApplicationLoadBalancersUsingGET(c
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -226,7 +222,7 @@ func (a *LoadBalancerControllerApiService) GetApplicationLoadBalancersUsingGET(c
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 LoadBalancerControllerApiService Retrieve a load balancer&#39;s details as a single element list for a given account, region, cloud provider and load balancer name
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param account account
@@ -305,9 +301,7 @@ func (a *LoadBalancerControllerApiService) GetLoadBalancerDetailsUsingGET(ctx co
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -333,7 +327,7 @@ func (a *LoadBalancerControllerApiService) GetLoadBalancerDetailsUsingGET(ctx co
 	return localVarReturnValue, localVarHttpResponse, nil
 }
 
-/* 
+/*
 LoadBalancerControllerApiService Retrieve a load balancer for a given cloud provider
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param name name
@@ -408,9 +402,7 @@ func (a *LoadBalancerControllerApiService) GetLoadBalancerUsingGET(ctx context.C
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return localVarReturnValue, localVarHttpResponse, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -435,3 +427,4 @@ func (a *LoadBalancerControllerApiService) GetLoadBalancerUsingGET(ctx context.C
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
